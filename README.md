@@ -76,9 +76,9 @@ cli.configurep(["int vlan 1", "ip address 10.5.123.27 255.255.255.0", "no shut",
 
 Included in the repository are several example ZTP.py files. From basic example with just a few CLI's to an advanced use case where model number and serial numbers are evaluated as variables.
 
- - ztp-simple.py - Simple ZTP file to provision the IP and AAA and enable the API
- - ztp-debug.py - Debug commands for additional output and troubleshooting
- - ztp-advanced.py - Avanced use case where the software is upgraded and configuration file is applied
+ - [ztp-simple.py](https://github.com/jeremycohoe/c9300-ztp/blob/master/ztp-simple.py) - Simple ZTP file to provision the IP and AAA and enable the API
+ - [ztp-debug.py](https://github.com/jeremycohoe/c9300-ztp/blob/master/ztp-debug.py) - Debug commands for additional output and troubleshooting
+ - [ztp-advanced.py](https://github.com/jeremycohoe/c9300-ztp/blob/master/ztp-advanced.py) - Avanced use case where the software is upgraded and configuration file is applied
 
 
 ## Resources
