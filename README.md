@@ -1,4 +1,4 @@
-# Introduction to ZTP
+# Introduction to Zero Touch Provisioning
 
 The Zero Touch Provision solution fits within the **Day 0 - Device Onboarding** part of the IOS XE device lifecycle. It's function is to onboard network devices to the network. There are components from **Day N - Device Optimzation** specifically the Python API and the Gueset Shell Linux Container that are leveraged as part of the ZTP feature. There are other labs that focus more on Guest Shell and the Python API, as well as on the Day 1 and Day 2 features that are not covered as part of this lab.
 
