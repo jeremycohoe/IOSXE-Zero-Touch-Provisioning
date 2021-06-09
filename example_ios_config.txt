@@ -1,0 +1,25 @@
+en
+conf t
+hostname MM8-C9KV-1
+!
+aaa new-model
+aaa authentication login default local
+aaa authorization exec default local
+!aaa session-id common
+license boot level network-advantage
+!
+username admin privilege 15 password 0 Cisco123
+!
+interface GigabitEthernet0/0
+ vrf forwarding Mgmt-vrf
+ ip address 172.26.150.121 255.255.255.0
+ no shut
+ negotiation auto
+!
+ip route vrf Mgmt-vrf 0.0.0.0 0.0.0.0 172.26.150.1
+!
+line vty 0 15
+ exec-timeout 0 0
+ transport input all
+ntp server vrf Mgmt-vrf 10.81.254.202
+end
