@@ -1,0 +1,19 @@
+# IOS DHCP Config
+
+Example CLI configuration for ZTP when using Cisco IOS DHCP 
+
+```
+ip dhcp pool JCOHOE_LAB
+ network 10.5.123.0 255.255.255.0
+ default-router 10.5.123.1
+ dns-server 10.5.1.100
+ domain-name dnalab.ciscovancouver.com
+ option 67 ascii http://10.5.123.33/ztp.py
+```
+
+
+## TFTP is also supported:
+``
+option 67 ascii 10.5.123.33
+option 150 ascii /ztp.py
+``
