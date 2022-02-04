@@ -9,46 +9,46 @@ print("\n\n *** Sample ZTP Day0 Python Script *** \n\n")
 
 print("\n\n *** Determine hostname based on serial number  *** \n\n")
 hostnames = {
-'c9300-pod01':'FCW2129G042',
-'c9300-pod02':'FCW2129G01K',
-'c9300-pod03':'FCW2129G02M',
-'c9300-pod04':'FCW2129L05L',
-'c9300-pod05':'FCW2129L03E',
-'c9300-pod06':'FCW2241DH93',
-'c9300-pod07':'FCW2126G05V',
-'c9300-pod08':'FCW2241AHB1',
-'c9300-pod09':'FCW2129L0DU',
-'c9300-pod10':'FCW2241AHAT',
-'c9300-pod11':'FCW2129G02U',
-'c9300-pod12':'FCW2129L05A',
-'c9300-pod13':'FCW2241CHAT',
-'c9300-pod14':'FCW2129L049',
-'c9300-pod15':'FCW2241CH9K',
-'c9300-pod16':'FCW2241D0KM',
-'c9300-pod17':'FCW2129G0EF',
-'c9300-pod18':'FCW2129L09E',
-'c9300-pod19':'FCW2241BH95',
-'c9300-pod20':'FCW2241BH96',
-'c9300-pod21':'FCW2129L04A',
-'c9300-pod22':'FCW2241DHBH',
-'c9300-pod23':'FCW2146G095',
-'c9300-pod24':'FCW2241DHBN',
-'c9300-pod25':'FCW2129L02R',
-'c9300-pod26':'FCW2129L03Z',
-'c9300-pod27':'FCW2129G03A',
-'c9300-pod28':'FCW2129G03G',
-'c9300-pod29':'FCW2129G0PZ',
-'c9300-pod30':'FCW2129L05N' }
+    'FCW2129G042': 'c9300-pod01', 
+    'FCW2129G01K': 'c9300-pod02', 
+    'FCW2129G02M': 'c9300-pod03', 
+    'FCW2129L05L': 'c9300-pod04', 
+    'FCW2129L03E': 'c9300-pod05', 
+    'FCW2241DH93': 'c9300-pod06', 
+    'FCW2126G05V': 'c9300-pod07', 
+    'FCW2241AHB1': 'c9300-pod08', 
+    'FCW2129L0DU': 'c9300-pod09', 
+    'FCW2241AHAT': 'c9300-pod10', 
+    'FCW2129G02U': 'c9300-pod11', 
+    'FCW2129L05A': 'c9300-pod12', 
+    'FCW2241CHAT': 'c9300-pod13', 
+    'FCW2129L049': 'c9300-pod14', 
+    'FCW2241CH9K': 'c9300-pod15', 
+    'FCW2241D0KM': 'c9300-pod16', 
+    'FCW2129G0EF': 'c9300-pod17', 
+    'FCW2129L09E': 'c9300-pod18', 
+    'FCW2241BH95': 'c9300-pod19', 
+    'FCW2241BH96': 'c9300-pod20', 
+    'FCW2129L04A': 'c9300-pod21', 
+    'FCW2241DHBH': 'c9300-pod22', 
+    'FCW2146G095': 'c9300-pod23', 
+    'FCW2241DHBN': 'c9300-pod24', 
+    'FCW2129L02R': 'c9300-pod25', 
+    'FCW2129L03Z': 'c9300-pod26', 
+    'FCW2129G03A': 'c9300-pod27', 
+    'FCW2129G03G': 'c9300-pod28', 
+    'FCW2129G0PZ': 'c9300-pod29', 
+    'FCW2129L05N': 'c9300-pod30'
+}
 
-hostname = 'c9300' # create a default hostname incase a mapping isn't found
-for key, value in hostnames.items():
-    serial = cli.execute('show version | i System Serial Number')
-    serial = serial[serial.find(': ')+2:].strip() # we just care about the part after the ': ' and remove any newline chars throughout (one is at the end of the string)
-    if(value == serial):
-        hostname = key
-        break
+## set hostname 
+serial = cli.execute('show version | i System Serial Number')
+serial = serial[serial.find(': ')+2:].strip() # we just care about the part after the ': ' and remove any newline chars throughout (one is at the end of the string)
+if(serial in hostnames):
+    hostname = hostnames[serial]
+else: 
+    hostname = 'c9300' # create a default hostname incase a mapping isn't found
 cli.configurep(['hostname {}'.format(hostname)])
-
 
 # Configure interface
 print("Configure vlan interface, gateway, aaa, and enable netconf-yang, etc... \n\n")
