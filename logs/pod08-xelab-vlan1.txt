@@ -1,0 +1,706 @@
+auto@pod3-xelab:~$ ./console-helper.sh
+Connecting to console for:
+POD-3
+
+Escape character is '^]'.
+
+
+User Access Verification
+
+Username: admin
+Password:
+
+C9300>en
+C9300#wr
+Building configuration...
+
+*Apr  1 21:53:31.191: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: admin] [Source: LOCAL] [localport: 0] at 14:53:31 Pacific Fri Apr 1 2022[OK]
+C9300#
+C9300#
+*Apr  1 21:53:32.082: %HA_EM-6-LOG: catchall: enable
+*Apr  1 21:53:32.585: %HA_EM-6-LOG: catchall: write
+C9300#wr er
+************************************************************************************************************
+Erasing Nvram will not clear license trust code.
+************************************************************************************************************
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]
+[OK]
+Erase of nvram: complete
+C9300#
+*Apr  1 21:53:35.164: %HA_EM-6-LOG: catchall: write erase
+C9300#
+C9300#
+*Apr  1 21:53:36.336: %SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvram
+C9300#
+C9300#reload
+Reload command is being issued on Active unit, this will reload the whole stack
+Proceed with reload? [confirm]
+
+*Apr  1 21:53:41.092: %HA_EM-6-LOG: catchall: reload
+*Apr  1 21:53:43.076: %SYS-5-RELOAD: Reload requested by admin on console. Reload Reason: Reload Command.
+Chassis 1 reloading, reason - Reload command
+Apr  1 14:53:48.071: %PMAN-5-EXITACTION: F0/0: pvp: Process manager is exiting: reload fp action requested
+Apr  1 14:53:49.607: %PMAN-5-EXITACTION: R0/0: pvp: Proger is exiting: process exit with reload stack code
+
+
+
+Initializing Hardware......
+
+System Bootstrap, Version 17.6.1r[FC2], RELEASE SOFTWARE (P)
+Compiled Wed 05/12/2021 15:39:34.01 by rel
+
+Current ROMMON image : Primary
+Last reset cause     : SoftwareReload
+C9300-24T platform with 8388608 Kbytes of main memory
+
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+#
+#########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+
+
+
+*Apr 01 21:55:45.262: %IOSXEBOOT-4-SMART_LOG: (rp/0): Fri Apr 1 21:55:45 Universal 2022 INFO: Starting SMART daemon
+
+Both links down, not waiting for other switches
+                                               Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [Cupertino], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.7.1, RELEASE SOFTWARE (fc5)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2021 by Cisco Systems, Inc.
+Compiled Sat 04-Dec-21 15:59 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+PLEASE READ THE FOLLOWING TERMS CAREFULLY. INSTALLING THE LICENSE OR
+LICENSE KEY PROVIDED FOR ANY CISCO SOFTWARE PRODUCT, PRODUCT FEATURE,
+AND/OR SUBSEQUENTLY PROVIDED SOFTWARE FEATURES (COLLECTIVELY, THE
+"SOFTWARE"), AND/OR USING SUCH SOFTWARE CONSTITUTES YOUR FULL
+ACCEPTANCE OF THE FOLLOWING TERMS. YOU MUST NOT PROCEED FURTHER IF YOU
+ARE NOT WILLING TO BE BOUND BY ALL THE TERMS SET FORTH HEREIN.
+
+Your use of the Software is subject to the Cisco End User License Agreement
+(EULA) and any relevant supplemental terms (SEULA) found at
+http://www.cisco.com/c/en/us/about/legal/cloud-and-software/software-terms.html.
+
+You hereby acknowledge and agree that certain Software and/or features are
+licensed for a particular term, that the license to such Software and/or
+features is valid only for the applicable term and that such Software and/or
+features may be shut down or otherwise terminated by Cisco after expiration
+of the applicable license term (e.g., 90-day trial period). Cisco reserves
+the right to terminate any such Software feature electronically or by any
+other means available. While Cisco may provide alerts, it is your sole
+responsibility to monitor your usage of any such term Software feature to
+ensure that your systems and networks are prepared for a shutdown of the
+Software feature.
+
+
+% Checking backup nvram
+% No config present. Using default config
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9300-24T (X86) processor with 1319367K/6147K bytes of memory.
+Processor board ID FCW2129G02M
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : a0:f8:49:15:31:80
+Motherboard Assembly Number        : 73-17952-06
+Motherboard Serial Number          : FOC212869LT
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9300-24T
+System Serial Number               : FCW2129G02M
+CLEI Code Number                   :
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+Apr  1 21:56:53.192: %IOX-3-IOX_RESTARTABITLITY: R0/0: run_ioxn_caf: Stack is in N+1 mode, disabling sync for IOx restartability
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+*Apr  1 21:55:44.332: %IOSXE-0-PLATFORM: Switch 1 R0/0: udev: usb1: has been inserted
+Autoinstall trying DHCPv6 on Vlan1
+
+Autoinstall trying DHCPv4 on Vlan1
+
+Acquired IPv4 address 10.1.1.157 on Interface Vlan1
+Received following DHCPv4 options:
+        domain-name     : ios-xe-programmability-lab.cisco.com
+        bootfile        : http://10.1.1.3/ztp-simple.py
+        dns-server-ip   : 128.107.212.175
+        si-addr         : 10.1.1.3
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+
+Attempting bootfile http://10.1.1.3/ztp-simple.py
+
+Loading http://10.1.1.3/ztp-simple.py
+Loading http://10.1.1.3/ztp-simple.py
+
+
+Press RETURN to get started!
+
+
+*Apr  1 21:58:25.591: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Apr  1 21:58:26.248: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TP-self-signed-3757114094 has been generated or imported by crypto-engine
+*Apr  1 21:58:26.316: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Apr  1 21:58:26.318: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Apr  1 21:58:26.318: %PNP-6-HTTP_CONNECTING: PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+*Apr  1 21:58:26.666: %PNP-6-HTTP_CONNECTED: PnP Discovery connected to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+*Apr  1 21:58:26.667: %PNP-6-PNP_PROFILE_CREATED: PnP profile (pnp_cco_profile) created (1/10) by (pid=466, pname=PnP Agent Discovery, time=21:58:26 UTC Fri Apr 1 2022)
+*Apr  1 21:58:26.287: %IOSXE-6-PLATFORM: Switch 1 R0/0: IOx:  App verification successful
+*Apr  1 21:58:27.710: %PNP-6-PNP_SUDI_UPDATE: Device SUDI [PID:C9300-24T,SN:FCW2129G02M] identified
+*Apr  1 21:58:27.710: %PNP-6-PNP_RELOAD_INFO_ENCODED: Reload reason (PnP Service Info 2408-Reload Command) encoded (1/3) by (pid=466, pname=PnP Agent Discovery)
+*Apr  1 21:58:27.711: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:58:28.526: %PNP-6-PNP_RELOAD_INFO_STOPPED: Reload reason (PnP Service Info 2408-Reload Command) stopped by (profile=pnp_cco_profile, host=devicehelper.cisco.com., port=443)day0guestshell activated successfully
+Current state is: ACTIVATED
+day0guestshell started successfully
+Current state is: RUNNING
+Guestshell enabled successfully
+
+*Apr  1 21:58:32.138: %IM-6-IOX_INST_INFO: Switch 1 R0/0: ioxman: IOX SERVICE day0guestshell LOG: Guestshell is up at 03/01/2022 21:58:32
+*Apr  1 21:58:32.520: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR2 GigabitEthernet1/0/3 (23).
+
+ *** Sample ZTP Day0 Python Script ***
+
+
+Line 1 SUCCESS:  hostname c9300-pod03
+
+*** Configure catchall EEM script on device... ***
+*** Successfully configured catchall EEM script on device! ***
+Configure vlan interface, gateway, aaa, and enable netconf-yang, etc...
+
+
+ConfigError: There was a problem with 1 commands while configuring the device.
+Line 1 SUCCESS:  int gi1/0/24
+Line 2 SUCCESS:  no switchport
+Line 3 FAILURE:  ip address 10.1.1.5 255.255.255.0
+**CLI Line 3:                                     ^
+Line 4 SUCCESS:  no shut
+Line 5 SUCCESS:  end
+
+Line 1 SUCCESS:  ip route 0.0.0.0 0.0.0.0 10.1.1.3
+Line 2 SUCCESS:  end
+
+
+*Apr  1 21:58:35.295: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+*Apr  1 21:58:35.444: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:35.446: %HA_EM-6-LOG: catchall: interface GigabitEthernet1/0/24
+*Apr  1 21:58:35.447: %HA_EM-6-LOG: catchall: no switchport
+*Apr  1 21:58:35.540: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100004_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:35.542: %HA_EM-6-LOG: catchall: ip address 10.1.1.5 255.255.255.0
+*Apr  1 21:58:35.544: %HA_EM-6-LOG: catchall: no shutdown
+*Apr  1 21:58:35.545: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:35.558: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:35.561: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100005_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:35.562: %HA_EM-6-LOG: catchall: ip route 0.0.0.0 0.0.0.0 10.1.1.3
+*Apr  1 21:58:35.563: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:35.579: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:35.581: %HA_EM-6-LOG: catchall: interface Vlan1
+*Apr  1 21:58:35.582: %HA_EM-6-LOG: catchall: no ip address
+*Apr  1 21:58:37.532: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to downLine 1 SUCCESS:  int vlan 1
+Line 2 SUCCESS:  no ip address
+Line 3 SUCCESS:  end
+
+Line 1 SUCCESS:  username admin privilege 15 secret 0 Cisco123
+
+Line 1 SUCCESS:  aaa new-model
+Line 2 SUCCESS:  aaa authentication login default local
+Line 3 SUCCESS:  end
+
+Line 1 SUCCESS:  aaa authorization exec default local
+Line 2 SUCCESS:  aaa session-id common
+Line 3 SUCCESS:  end
+
+Line 1 SUCCESS:  ip tftp blocksize 8192
+Line 2 SUCCESS:  end
+
+Line 1 SUCCESS:  ip tcp window-size 65535
+Line 2 SUCCESS:  end
+
+Line 1 SUCCESS:  ip http client source-interface GigabitEthernet1/0/24
+Line 2 SUCCESS:  end
+
+Line 1 SUCCESS:  interface Loopback0
+Line 2 SUCCESS:  ip address 192.168.12.1 255.255.255.0
+Line 3 SUCCESS:  end
+
+Line 1 SUCCESS:  netconf-yang
+Line 2 SUCCESS:  end
+
+Line 1 SUCCESS:  gnxi
+Line 2 SUCCESS:  gnxi server
+Line 3 SUCCESS:  end
+
+Line 1 SUCCESS:  line vty 0 32
+Line 2 SUCCESS:  transport input all
+Line 3 SUCCESS:  exec-timeout 0 0
+Line 4 SUCCESS:  end
+
+Line 1 SUCCESS:  logging buffered 32000
+Line 2 SUCCESS:  logging host 10.1.1.3 transport udp port 5144
+Line 3 SUCCESS:  line con 0
+Line 4 SUCCESS:  logging synchronous limit 1000
+Line 5 SUCCESS:  end
+
+Line 1 SUCCESS:  ip scp server enable
+Line 2 SUCCESS:  end
+
+
+*Apr  1 21:58:40.920: %SYS-5-LOG_CONFIG_CHANGE: Buffer logging: level debugging, xml disabled, filtering disabled, size (32000)
+*Apr  1 21:58:40.922: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.924: %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 10.1.1.3 port 0 CLI Request Triggered
+*Apr  1 21:58:40.928: %HA_EM-6-LOG: catchall: logging buffered 32000
+*Apr  1 21:58:40.930: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100017_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.932: %HA_EM-6-LOG: catchall: logging host 10.1.1.3 transport udp port 5144
+*Apr  1 21:58:40.934: %HA_EM-6-LOG: catchall: line con 0
+*Apr  1 21:58:40.935: %HA_EM-6-LOG: catchall: logging synchronous limit 1000
+*Apr  1 21:58:40.936: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.938: %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 10.1.1.3 port 5144 started - CLI initiated
+*Apr  1 21:58:40.951: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.952: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100018_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.582: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100006_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.584: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.599: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.601: %HA_EM-6-LOG: catchall: username admin privilege 15 secret 0 Cisco123
+*Apr  1 21:58:40.669: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.691: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100008_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.694: %HA_EM-6-LOG: catchall: aaa new-model
+*Apr  1 21:58:40.696: %HA_EM-6-LOG: catchall: aaa authentication login default local
+*Apr  1 21:58:40.697: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.721: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.724: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100009_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.725: %HA_EM-6-LOG: catchall: aaa authorization exec default local
+*Apr  1 21:58:40.727: %HA_EM-6-LOG: catchall: aaa session-id common
+*Apr  1 21:58:40.727: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+*Apr  1 21:58:40.730: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.745: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.747: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100010_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.748: %HA_EM-6-LOG: catchall: ip tftp blocksize 8192
+*Apr  1 21:58:40.749: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.766: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.766: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100011_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.768: %HA_EM-6-LOG: catchall: ip tcp window-size 65535
+*Apr  1 21:58:40.769: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.785: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.785: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100012_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.788: %HA_EM-6-LOG: catchall: ip http client source-interface GigabitEthernet1/0/24
+*Apr  1 21:58:40.789: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.803: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+*Apr  1 21:58:40.805: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.810: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100013_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.812: %HA_EM-6-LOG: catchall: interface Loopback0
+*Apr  1 21:58:40.813: %HA_EM-6-LOG: catchall: ip address 192.168.12.1 255.255.255.0
+*Apr  1 21:58:40.813: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.828: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.829: %HA_EM-6-LOG: catchall: netconf-yang
+*Apr  1 21:58:40.842: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100014_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.844: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.867: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.868: %HA_EM-6-LOG: catchall: gnxi
+*Apr  1 21:58:40.873: %HA_EM-6-LOG: catchall: gnxi server
+*Apr  1 21:58:40.875: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100015_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:40.877: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.898: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.900: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100016_vty_100001 from console as ZTP on vty72Line 1 SUCCESS:  hostname C9300
+Line 2 SUCCESS:  ntp server 10.1.1.3
+Line 3 SUCCESS:  clock timezone Pacific -7
+Line 4 SUCCESS:  end
+
+Line 1 SUCCESS:  ip name-server 10.1.1.3
+Line 2 SUCCESS:  ip domain lookup
+Line 3 SUCCESS:  end
+
+Line 1 SUCCESS:  telemetry ietf subscription 6041337
+Line 2 SUCCESS:  encoding encode-kvgpb
+Line 3 SUCCESS:  filter xpath /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/five-seconds
+Line 4 SUCCESS:  stream yang-push
+Line 5 SUCCESS:  update-policy periodic 30000
+Line 6 SUCCESS:  receiver ip address 10.1.1.3 57500 protocol grpc-tcp
+Line 7 SUCCESS:  end
+
+
+
+ *** Executing show ip interface brief  ***
+
+
+Line 1 SUCCESS:  int gi1/0/24
+Line 2 SUCCESS:  no switchport
+Line 3 SUCCESS:  ip address 10.1.1.5 255.255.255.0
+Line 4 SUCCESS:  no shut
+Line 5 SUCCESS:  end
+
+Line 1 SUCCESS:  ip route 0.0.0.0 0.0.0.0 10.1.1.3
+Line 2 SUCCESS:  end
+
+Line 1 SUCCESS:  int vlan 1
+Line 2 SUCCESS:  no ip address
+Line 3 SUCCESS:  end
+
+ConfigError: There was a problem with 2 commands while configuring the device.
+Line 1 FAILURE:  gi1/0/13
+**CLI Line 1:     ^
+Line 2 FAILURE:  shut
+**CLI Line 2:        ^
+Line 3 SUCCESS:  end
+
+
+
+ *** Executing show ip interface brief  ***
+
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1/0/24  10.1.1.5        YES other  up                    up
+Loopback0              192.168.12.1    YES other  up                    up
+
+Line 1 SUCCESS:  restconf
+Line 2 SUCCESS:  end
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1/0/24  10.1.1.5        YES other  up                    up
+Loopback0              192.168.12.1    YES other  up                    up
+
+
+*Apr  1 21:58:40.954: %HA_EM-6-LOG: catchall: ip scp server enable
+*Apr  1 21:58:40.956: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.969: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:40.976: %SMART_LIC-6-HOSTNAME_MATCHED_UDI: The host name has been changed to match a field in the device identifier (UDI). Since the device identifier is sent to Cisco this may bypass your host name privacy settings
+*Apr  1 21:58:41.029: %SYS-6-CLOCKUPDATE: System clock has been updated from 21:58:41 UTC Fri Apr 1 2022 to 14:58:41 Pacific Fri Apr 1 2022, configured from console by ZTP on vty72.
+*Apr  1 21:58:41.030: %HA_EM-6-LOG: catchall: hostname C9300
+*Apr  1 21:58:41.031: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100019_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:41.033: %HA_EM-6-LOG: catchall: ntp server 10.1.1.3
+*Apr  1 21:58:41.034: %HA_EM-6-LOG: catchall: clock timezone Pacific -7
+*Apr  1 21:58:41.035: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:41.049: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:41.055: %HA_EM-6-LOG: catchall: ip name-server 10.1.1.3
+*Apr  1 21:58:41.055: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100020_vty_100001 from console as ZTP on vty72Building configuration...
+[OK]
+
+
+
+ *** Finished device day 0 configuration... ***
+
+
+
+
+ *** *** ***
+
+
+
+
+ *** ***
+
+
+
+
+ ***
+
+
+
+
+ FLAG TO FOLLOW :)
+
+
+
+
+ ***
+
+
+
+
+ ***
+
+
+
+
+ ***
+
+
+
+
+ flag: 5a92266d5b83d55a21ec262961c3d226e7e0310b
+
+
+
+
+ ***
+
+
+
+
+
+
+
+
+
+
+
+
+Line 1 SUCCESS:  iox
+Line 2 SUCCESS:  end
+
+ConfigError: There was a problem with 1 commands while configuring the device.
+Line 1 FAILURE:  ip nat inside source list NAT_ACL interface vlan 1 overload
+**CLI Line 1:         ^
+
+Line 1 SUCCESS:  ip access-list standard NAT_ACL
+Line 2 SUCCESS:  permit 192.168.0.0 0.0.255.255
+Line 3 SUCCESS:  exit
+
+Line 1 SUCCESS:  vlan 4094
+Line 2 SUCCESS:  exit
+
+ConfigError: There was a problem with 1 commands while configuring the device.
+Line 1 SUCCESS:  int vlan 4094
+Line 2 SUCCESS:  ip address 192.168.2.1 255.255.255.0
+Line 3 FAILURE:  ip nat inside
+**CLI Line 3:
+*Apr  1 21:58:    ^
+Line 4 SUCCESS:  ip routing
+Line 5 SUCCESS:  ip route 0.0.0.0 0.0.0.0 10.1.1.3
+Line 6 SUCCESS:  end
+
+Line 1 SUCCESS:  app-hosting appid guestshell
+Line 2 SUCCESS:  app-vnic AppGigabitEthernet trunk
+Line 3 SUCCESS:  vlan 4094 guest-interface 0
+Line 4 SUCCESS:  guest-ipaddress 192.168.2.2 netmask 255.255.255.0
+Line 5 SUCCESS:  exit
+Line 6 SUCCESS:  app-default-gateway 192.168.2.1 guest-interface 0
+Line 7 SUCCESS:  name-server0 128.107.212.175
+Line 8 SUCCESS:  name-server1 64.102.6.247
+Line 9 SUCCESS:  exit
+Line 10 SUCCESS:  exit
+
+Line 1 SUCCESS:  interface AppGigabitEthernet1/0/1
+Line 2 SUCCESS:  switchport mode trunk
+Line 3 SUCCESS:  end
+
+41.057: %HA_EM-6-LOG: catchall: ip domain lookup
+*Apr  1 21:58:41.058: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:41.075: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:41.076: %HA_EM-6-LOG: catchall: telemetry ietf subscription 6041337
+*Apr  1 21:58:41.093: %HA_EM-6-LOG: catchall: encoding encode-kvgpb
+*Apr  1 21:58:41.097: %HA_EM-6-LOG: catchall: filter xpath /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/five-seconds
+*Apr  1 21:58:41.101: %HA_EM-6-LOG: catchall: stream yang-push
+*Apr  1 21:58:41.106: %HA_EM-6-LOG: catchall: update-policy periodic 30000
+*Apr  1 21:58:41.110: %HA_EM-6-LOG: catchall: receiver ip address 10.1.1.3 57500 protocol grpc-tcp
+*Apr  1 21:58:41.113: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100021_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:41.115: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:41.130: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:41.138: %HA_EM-6-LOG: catchall: interface GigabitEthernet1/0/24
+*Apr  1 21:58:41.142: %HA_EM-6-LOG: catchall: no switchport
+*Apr  1 21:58:41.143: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100022_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:41.146: %HA_EM-6-LOG: catchall: ip address 10.1.1.5 255.255.255.0
+*Apr  1 21:58:41.147: %HA_EM-6-LOG: catchall: no shutdown
+*Apr  1 21:58:41.148: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:41.165: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:41.165: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100023_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:41.167: %HA_EM-6-LOG: catchall: ip route 0.0.0.0 0.0.0.0 10.1.1.3
+*Apr  1 21:58:41.168: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:41.188: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:41.191: %HA_EM-6-LOG: catchall: interface Vlan1
+*Apr  1 21:58:41.191: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100024_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:41.193: %HA_EM-6-LOG: catchall: no ip address
+*Apr  1 21:58:41.194: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:41.209: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:41.213: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100025_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:41.215: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:41.241: %HA_EM-6-LOG: catchall: show ip interface brief
+*Apr  1 21:58:41.256: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:41.258: %HA_EM-6-LOG: catchall: restconf
+*Apr  1 21:58:41.261: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100027_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:41.264: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:40.885: %PSD_MOD-5-DMI_NOTIFY_NETCONF_START: Switch 1 R0/0: psd: PSD/DMI: netconf-yang server has been notified to start
+*Apr  1 21:58:41.283: %HA_EM-6-LOG: catchall: show ip interface brief
+*Apr  1 21:58:41.345: %HA_EM-6-LOG: catchall: write memory
+*Apr  1 21:58:41.727: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+*Apr  1 21:58:42.259: %PSD_MOD-5-DMI_NOTIFY_RESTCONF_START: Switch 1 R0/0: psd: PSD/DMI: restconf server has been notified to start
+*Apr  1 21:58:42.703: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:42.703: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100030_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:42.706: %HA_EM-6-LOG: catchall: iox
+*Apr  1 21:58:42.707: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:42.727: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:42.753: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:42.769: %HA_EM-6-LOG: catchall: ip access-list standard NAT_ACL
+*Apr  1 21:58:42.770: %HA_EM-6-LOG: catchall: permit 192.168.0.0 0.0.255.255
+*Apr  1 21:58:42.772: %HA_EM-6-LOG: catchall: exit
+*Apr  1 21:58:42.789: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:42.804: %HA_EM-6-LOG: catchall: vlan 4094
+*Apr  1 21:58:42.806: %HA_EM-6-LOG: catchall: exit
+*Apr  1 21:58:42.827: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:42.832: %HA_EM-6-LOG: catchall: interface Vlan4094
+*Apr  1 21:58:42.884: %HA_EM-6-LOG: catchall: ip address 192.168.2.1 255.255.255.0
+*Apr  1 21:58:42.885: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100034_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:42.887: %HA_EM-6-LOG: catchall: ip routing
+*Apr  1 21:58:42.888: %HA_EM-6-LOG: catchall: ip route 0.0.0.0 0.0.0.0 10.1.1.3
+*Apr  1 21:58:42.889: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:42.916: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:42.917: %HA_EM-6-LOG: catchall: app-hosting appid guestshell
+*Apr  1 21:58:42.923: %HA_EM-6-LOG: catchall: app-vnic AppGigabitEthernet trunk
+*Apr  1 21:58:42.927: %HA_EM-6-LOG: catchall: vlan 4094 guest-interface 0
+*Apr  1 21:58:42.933: %HA_EM-6-LOG: catchall: guest-ipaddress 192.168.2.2 netmask 255.255.255.0
+*Apr  1 21:58:42.938: %HA_EM-6-LOG: catchall: exit
+*Apr  1 21:58:42.941: %HA_EM-6-LOG: catchall: app-default-gateway 192.168.2.1 guest-interface 0
+*Apr  1 21:58:42.944: %HA_EM-6-LOG: catchall: name-server0 128.107.212.175
+*Apr  1 21:58:42.948: %HA_EM-6-LOG: catchall: name-server1 64.102.6.247
+*Apr  1 21:58:42.952: %HA_EM-6-LOG: catchall: exit
+*Apr  1 21:58:42.953: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100035_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:42.955: %HA_EM-6-LOG: catchall: exit
+*Apr  1 21:58:42.973: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:58:42.978: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100036_vty_100001 from console as ZTP on vty72
+*Apr  1 21:58:42.979: %HA_EM-6-LOG: catchall: interface AppGigabitEthernet1/0/1
+*Apr  1 21:58:42.980: %HA_EM-6-LOG: catchall: switchport mode trunk
+*Apr  1 21:58:42.981: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:58:43.000: %HA_EM-6-LOG: catchall: copy tftp://10.1.1.3/cli2yang.tgz flash:guest-share/
+*Apr  1 21:58:43.822: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan4094, changed state to down
+*Apr  1 21:58:43.975: %LINEPROTO-5-UPDOWN: Line protocol on Interface AppGigabitEthernet1/0/1, changed state to down
+*Apr  1 21:58:45.975: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Apr  1 21:58:46.979: %LINEPROTO-5-UPDOWN: Line protocol on Interface AppGigabitEthernet1/0/1, changed state to up
+*Apr  1 21:58:50.157: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Apr  1 21:58:50.453: %GNMIB-5-SRV_ADMIN_SCN: Switch 1 R0/0: gnmib: Component [ gnmi::broker ] administrative state: DISABLED
+*Apr  1 21:58:50.453: %GNMIB-5-SRV_OPER_SCN: Switch 1 R0/0: gnmib: Component [ gnmi::broker ] operational status: DOWN
+*Apr  1 21:58:51.157: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Apr  1 21:58:51.135: %GNMIB-5-SRV_ADMIN_SCN: Switch 1 R0/0: gnmib: Component [ gnmi::broker ] administrative state: ENABLED
+*Apr  1 21:58:52.893: %HMANRP-6-EMP_NO_ELECTION_INFO: Could not elect active EMP switch, setting emp active switch to 0: EMP_RELAY: Could not elect switch with mgmt port UP
+*Apr  1 21:59:00.157: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+*Apr  1 21:59:01.157: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+*Apr  1 21:59:03.903: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name Destination filename [guest-share/cli2yang.tgz]?
+%Warning:There is a file already existing with this name
+Do you want to over write?
+Accessing tftp://10.1.1.3/cli2yang.tgz...
+Loading cli2yang.tgz from 10.1.1.3 (via GigabitEthernet1/0/24): !
+[OK - 421 bytes]
+421 bytes copied in 0.019 secs (22158 bytes/sec)
+
+Destination filename [guest-share/cli2yang.sh]?
+%Warning:There is a file already existing with this name
+Do you want to over write?
+Accessing tftp://10.1.1.3/cli2yang.sh...
+Loading cli2yang.sh from 10.1.1.3 (via GigabitEthernet1/0/24): !
+[OK - 354 bytes]
+354 bytes copied in 0.018 secs (19667 bytes/sec)
+
+Line 1 SUCCESS:  alias exec cli2yang event manager run cli2yang
+Line 2 SUCCESS:  exit
+
+*** Configure cli2yang examples on device... ***
+*** Successfully configured cli2yang on device! ***
+
+
+*Apr  1 21:59:13.047: %HA_EM-6-LOG: catchall: copy tftp://10.1.1.3/cli2yang.sh flash:guest-share/
+*Apr  1 21:59:13.089: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:59:13.089: %SYS-5-CONFIG_P: Configured programmatically by process iosp_62477588BD0DB54864000001_conn_100041_vty_100001 from console as ZTP on vty72
+*Apr  1 21:59:13.092: %HA_EM-6-LOG: catchall: alias exec  cli2yang event manager run cli2yang
+*Apr  1 21:59:13.093: %HA_EM-6-LOG: catchall: exit
+*Apr  1 21:59:13.108: %HA_EM-6-LOG: catchall: configure terminal
+*Apr  1 21:59:13.111: %HA_EM-6-LOG: catchall: no event manager applet cli2yang
+*Apr  1 21:59:13.112: %HA_EM-6-LOG: catchall: event manager applet cli2yang
+*Apr  1 21:59:13.113: %HA_EM-6-LOG: catchall: event none maxrun 300
+*Apr  1 21:59:13.115: %HA_EM-6-LOG: catchall: action 0001 cli command "enable"
+*Apr  1 21:59:13.118: %HA_EM-6-LOG: catchall: action 0002 cli command "guestshell enable"
+*Apr  1 21:59:13.120: %HA_EM-6-LOG: catchall: action 0030 cli command "guestshell run /usr/bin/bash /bootflash/guest-share/cli2yang.sh"
+*Apr  1 21:59:14.425: %HA_EM-6-LOG: catchall: request platform software iox-manager guestshell destroy
+*Apr  1 21:59:18.977: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+*Apr  1 21:59:18.978: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan4094, changed state to up
+*Apr  1 21:59:26.714: %NDBMAN-5-ACTIVE: Switch 1 R0/0: ndbmand: All data providers active.
+*Apr  1 21:59:35.240: %DMI-5-NACM_INIT: Switch 1 R0/0: dmiauthd: NACM configuration has been set to its initial configuration.
+*Apr  1 21:59:38.792: %HA_EM-6-LOG: catchall: show running-config brief
+*Apr  1 21:59:38.772: %DMI-5-SYNC_NEEDED: Switch 1 R0/0: dmiauthd: Configuration change requiring running configuration sync detected - 'Initial sync'. The running configuration will be synchronized  to the NETCONF running data store.
+*Apr  1 21:59:38.912: %DMI-5-SYNC_START: Switch 1 R0/0: dmiauthd: Synchronization of the running configuration to the NETCONF running data store has started.Guestshell destroyed successfully
+Script execution success!
+
+*Apr  1 21:59:44.295: %HA_EM-6-LOG: catchall: no app-hosting appid day0guestshell
+*Apr  1 21:59:44.300: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Apr  1 21:59:44.301: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:44.306: %PNP-6-PNP_PYTHON_SCRIPT_DONE: Python script (http://10.1.1.3/ztp-simple.py) done (1/3) via (script-file-exec) by (pid=485, pname=DHCP Autoinstall, time=14:59:44 Pacific Fri Apr 1 2022)
+*Apr  1 21:59:44.306: AUTOINSTALL: script execution successful for Vl1.
+*Apr  1 21:59:45.314: %PNP-6-PNP_BACKOFF_NOW: PnP Backoff now for (300) seconds requested (1/3) by (profile=pnp_cco_profile, host=devicehelper.cisco.com., port=443)
+*Apr  1 21:59:45.665: %DMI-5-SYNC_COMPLETE: Switch 1 R0/0: dmiauthd: The running configuration has been synchronized to the NETCONF running data store.
+*Apr  1 21:59:46.685: %GNMIB-5-SRV_OPER_SCN: Switch 1 R0/0: gnmib: Component [ gnmi::broker ] operational status: UP
+*Apr  1 21:59:55.714: %PNP-3-PNP_CCO_PROFILE_UNCONFIGURED: CCO Server profile (pnp_cco_profile) unconfigured (1/10) by (pid=466, pname=PnP Agent Discovery, time=14:59:55 Pacific Fri Apr 1 2022)
+*Apr  1 21:59:55.714: %PNP-6-PNP_PROFILE_DELETED: PnP profile (pnp_cco_profile) deleted (1/10) by (pid=466, pname=PnP Agent Discovery, time=14:59:55 Pacific Fri Apr 1 2022)
+*Apr  1 21:59:55.723: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:55.726: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:55.731: %HA_EM-6-LOG: catchall: no pnp profile pnp_cco_profile
+*Apr  1 21:59:55.731: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:55.732: %HA_EM-6-LOG: catchall: no crypto pki certificate pool
+*Apr  1 21:59:55.733: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:56.729: %HA_EM-6-LOG: catchall: no ip dhcp pool webuidhcp
+*Apr  1 21:59:58.731: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:58.731: %PNP-6-PNP_SAVING_TECH_SUMMARY: Saving PnP tech summary (/pnp-tech/pnp-tech-discovery-summary)... Please wait. Do not interrupt.
+*Apr  1 21:59:58.732: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:58.841: %HA_EM-6-LOG: catchall: do-exec delete /force "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:58.843: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:58.843: %HA_EM-6-LOG: catchall: delete /force "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:58.844: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:58.945: %HA_EM-6-LOG: catchall: do-exec show clock | redirect "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:58.955: %HA_EM-6-LOG: catchall: show clock
+*Apr  1 21:59:58.963: %HA_EM-6-LOG: catchall: do-exec show logging | append "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:58.970: %HA_EM-6-LOG: catchall: show logging
+*Apr  1 21:59:59.001: %HA_EM-6-LOG: catchall: do-exec dir pnp* | append "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:59.004: %HA_EM-6-LOG: catchall: dir pnp*
+*Apr  1 21:59:59.065: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:59.068: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:59.069: %HA_EM-6-LOG: catchall: do-exec dir *bin* | append "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:59.073: %HA_EM-6-LOG: catchall: dir *bin*
+*Apr  1 21:59:59.087: %HA_EM-6-LOG: catchall: do-exec dir *SSA* | append "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:59.090: %HA_EM-6-LOG: catchall: dir *SSA*
+*Apr  1 21:59:59.109: %HA_EM-6-LOG: catchall: do-exec dir *pkg* | append "/pnp-tech/pnp-tech-time"
+*Apr  1 21:59:59.113: %HA_EM-6-LOG: catchall: dir *pkg*
+*Apr  1 21:59:59.158: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:59.159: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:59.270: %HA_EM-6-LOG: catchall: do-exec delete /force "/pnp-tech/pnp-tech-discovery-summary"
+*Apr  1 21:59:59.271: %HA_EM-6-LOG: catchall: delete /force "/pnp-tech/pnp-tech-discovery-summary"
+*Apr  1 21:59:59.271: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:59.273: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:59.374: %HA_EM-6-LOG: catchall: do-exec show pnp tech | redirect "/pnp-tech/pnp-tech-discovery-summary"
+*Apr  1 21:59:59.384: %HA_EM-6-LOG: catchall: show pnp tech-support
+*Apr  1 21:59:59.390: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TEST_CISCO_IDEVID_SUDI created succesfully
+*Apr  1 21:59:59.396: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TEST_CISCO_IDEVID_SUDI has been generated or imported by pki-sudi
+*Apr  1 21:59:59.428: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TEST_CISCO_IDEVID_SUDI0 created succesfully
+*Apr  1 21:59:59.430: %PKI-6-TRUSTPOINT_DELETE: Trustpoint: TEST_CISCO_IDEVID_SUDI deleted succesfully
+*Apr  1 21:59:59.431: %CRYPTO_ENGINE-5-KEY_DELETED: A key named TEST_CISCO_IDEVID_SUDI has been removed from key storage
+*Apr  1 21:59:59.431: %PKI-6-TRUSTPOINT_DELETE: Trustpoint: TEST_CISCO_IDEVID_SUDI0 deleted succesfully
+*Apr  1 21:59:59.432: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TEST_CISCO_IDEVID_SUDI created succesfully
+*Apr  1 21:59:59.438: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TEST_CISCO_IDEVID_SUDI has been generated or imported by pki-sudi
+*Apr  1 21:59:59.454: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TEST_CISCO_IDEVID_SUDI0 created succesfully
+*Apr  1 21:59:59.456: %PKI-6-TRUSTPOINT_DELETE: Trustpoint: TEST_CISCO_IDEVID_SUDI deleted succesfully
+*Apr  1 21:59:59.457: %CRYPTO_ENGINE-5-KEY_DELETED: A key named TEST_CISCO_IDEVID_SUDI has been removed from key storage
+*Apr  1 21:59:59.457: %PKI-6-TRUSTPOINT_DELETE: Trustpoint: TEST_CISCO_IDEVID_SUDI0 deleted succesfully
+*Apr  1 21:59:59.744: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Apr  1 21:59:59.745: %HA_EM-6-LOG: catchall: end
+*Apr  1 21:59:59.847: %PNP-6-PNP_TECH_SUMMARY_SAVED_OK: PnP tech summary (/pnp-tech/pnp-tech-discovery-summary) saved successfully (elapsed time: 1 seconds).
+*Apr  1 21:59:59.847: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Discovery Aborted)
+
+User Access Verification
+
+Username:
