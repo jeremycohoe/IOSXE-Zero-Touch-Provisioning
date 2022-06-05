@@ -1,3 +1,9 @@
+Run these CLI first with CLIP
+iosp_client -f netconf_enable guestshell 830
+iosp_client -f netconf_enable_passwordless guestshell guestshell
+    
+
+
 from ncclient import manager
 import sys
 import xml.dom.minidom
