@@ -6,8 +6,6 @@ import time
 
 print("\n\n *** Sample ZTP Day0 Python Script *** \n\n")
 
-
-
 hostnames = {
     'FFFFFF104442': 'c9300-pod01',
     'FFFFFF12041K': 'c9300-pod02',
@@ -62,9 +60,21 @@ print ("*** Successfully configured catchall EEM script on device! ***")
 
 # Configure interface
 print("Configure vlan interface, gateway, aaa, and enable netconf-yang, etc... \n\n")
-cli.configurep(["int gi1/0/24","no switchport", "ip address 10.1.1.5 255.255.255.0", "no shut", "end"])
-cli.configurep(["ip route 0.0.0.0 0.0.0.0 10.1.1.3", "end"])
+# Configure interface
+print("Configure vlan interface, gateway, aaa, and enable netconf-yang, etc... \n\n")
+ID = hostname[-2:]
+print("ID is ...." + ID)
+
+vlan_num = str(int(ID) + 20)
+print("vlan_num is ..." + str(vlan_num))
+
+cli.configurep(["vlan " + vlan_num, "end"])
 cli.configurep(["int vlan 1", "no ip address", "end"])
+cli.configurep(["int vlan " + vlan_num, "ip address 10.1.1.5 255.255.255.0", "end"])
+cli.configurep(["int range gi1/0/1 - 24", "switchport access vlan " + vlan_num, "end"])
+#cli.configurep(["int gi1/0/24","no switchport", "ip address 10.1.1.5 255.255.255.0", "desc uplink", "no shut", "end"]) # STORY if things dont go as planned, comment this line back in
+cli.configurep(["int gi1/0/1", "desc c9300", "shut", "end"])
+cli.configurep(["ip route 0.0.0.0 0.0.0.0 10.1.1.3", "end"])
 # AAA
 cli.configurep(["username admin privilege 15 secret 0 Cisco123"])
 cli.configurep(["aaa new-model", "aaa authentication login default local", "end"])
@@ -102,10 +112,19 @@ print("\n\n *** Executing show ip interface brief  *** \n\n")
 cli_command = "sh ip int brief | exclude unassigned"
 #
 # Configure interface 2nd time
-cli.configurep(["int gi1/0/24","no switchport", "ip address 10.1.1.5 255.255.255.0", "no shut", "end"])
+cli.configurep(["vlan " + vlan_num, "end"])
+cli.configurep(["int vlan " + vlan_num, "ip address 10.1.1.5 255.255.255.0", "end"])
+#cli.configurep(["vlan " + vlan_num, "int vlan " + vlan_num, "ip address 10.1.1.5 255.255.255.0", "end"])
+#cli.configurep(["int gi1/0/24","no switchport", "ip address 10.1.1.5 255.255.255.0", "no shut", "end"])
+#
+# Set the route...
 cli.configurep(["ip route 0.0.0.0 0.0.0.0 10.1.1.3", "end"])
-cli.configurep(["int vlan 1", "no ip address", "end"])
-cli.configurep(["int gi1/0/13", "shut", "end"])
+#
+# Dunno but I commented it out :)
+#cli.configurep(["int vlan 1", "no ip address", "end"])
+#
+# Ensure if AP is connected the port desc is set and no shut
+cli.configurep(["int gi1/0/13", "desc AP", "shut", "end"])
 #
 # Show interface
 print("\n\n *** Executing show ip interface brief  *** \n\n")
@@ -146,7 +165,7 @@ cli.configurep(["int vlan 4094", "ip address 192.168.2.1 255.255.255.0", "ip nat
 cli.configurep(["app-hosting appid guestshell", "app-vnic AppGigabitEthernet trunk", "vlan 4094 guest-interface 0", "guest-ipaddress 192.168.2.2 netmask 255.255.255.0", "exit", "app-default-gateway 192.168.2.1 guest-interface 0", "name-server0 128.107.212.175", "name-server1 64.102.6.247", "exit", "exit"])
 cli.configurep(["interface AppGigabitEthernet1/0/1", "switchport mode trunk", "end"])
 
-# Copy the files for the cli2yang
+# Copy the files for the cli2yang CTF lab
 cli_command = "copy tftp://10.1.1.3/cli2yang.tgz flash:guest-share/"
 cli.executep(cli_command)
 cli_command = "copy tftp://10.1.1.3/cli2yang.sh  flash:guest-share/"
@@ -167,14 +186,13 @@ eem_cli2yang_commands = ['no event manager applet cli2yang',
 results = configure(eem_cli2yang_commands)
 print ("*** Successfully configured cli2yang on device! ***")
 
-
-
+# Enable NETCONF API from Guestshell
 print("\n About to enable NETCONF API... \n")
 cli.netconf_enable_guestshell()
 print("\n\n *** NETCONF API enabled... *** \n\n")
 
 
-
+# Run a standalone python script that uses NETCONF instead of CLI to configure the device:
 from ncclient import manager
 import sys
 import xml.dom.minidom
@@ -184,7 +202,7 @@ HOST = '127.0.0.1'
 PORT = 830
 # use the user credentials for your  device
 USER = 'guestshell'
-PASS = 'it will use the key specified and does not use this one here ok'
+PASS = 'it will use the key specified and does not use this one here ok byeee'
 
 FILTER = '''
                 <filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
@@ -215,3 +233,4 @@ if __name__ == '__main__':
     sys.exit(main())
 
 print("\n\n *** Finished NETCONF example... *** \n\n")
+
