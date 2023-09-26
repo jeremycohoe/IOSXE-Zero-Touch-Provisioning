@@ -1,7 +1,6 @@
 #!/usr/bin/env python2.7
 # 
 # python -m py_compile sample_python_day0.py
-
 print("\n Welcome to ZTP! \n")
 
 import sys
@@ -14,9 +13,12 @@ import cli
 import traceback
 
 print("\n HellO!  \n")
-cli.configurep("hostname shishir")
+cli.configurep("hostname JCOHOE-ZTP-DEBUG")
+
+cli.executep("show inv")
 
 cli.executep("show version")
+
 import os
 os.system("sudo ifconfig")
 os.system("sudo route -n")
@@ -40,7 +42,7 @@ try:
     cli.executep("show version")
 except:
     print(traceback.format_exc())
-    print("Problem with show version CLI \n")
+    print("Problem with show version CLI, cya later... \n")
     
 #
 print("\n \n ZTP complete! \n \n")
