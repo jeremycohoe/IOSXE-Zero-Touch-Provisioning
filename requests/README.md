@@ -24,10 +24,6 @@ cli_command = "copy http://128.107.223.248/wxt.tgz flash:guest-share/"
 cli.executep(cli_command)
 cli_command = "copy http://128.107.223.248/wxt.sh  flash:guest-share/"
 cli.executep(cli_command)
-cli_command = "copy http://128.107.223.248/wxt.tgz flash:guest-share/"
-cli.executep(cli_command)
-cli_command = "copy http://128.107.223.248/wxt.sh  flash:guest-share/"
-cli.executep(cli_command)
 print ("** create alias exec **")
 # Create alias notification to run the EEM applet with:
 cli.configurep(["alias exec wxtnotification event manager run notification", "exit"])
