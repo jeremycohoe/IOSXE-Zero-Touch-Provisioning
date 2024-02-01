@@ -12,7 +12,7 @@ requests-2.27.1-py2.py3-none-any.whl
 urllib3-1.26.18-py2.py3-none-any.whl
 ```
 
-# Example python
+# Example python ztp-simple-notification.py
 
 ```
 print ("*** Starting notification on device! ***")
