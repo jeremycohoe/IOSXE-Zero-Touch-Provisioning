@@ -97,3 +97,5 @@ response = requests.post(url, headers=headers, data = payload).json()
 print(response)
 ```
 
+# Example notification in Webex Teams
+![](wxt_example_notification.jpg__)
