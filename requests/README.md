@@ -98,4 +98,4 @@ print(response)
 ```
 
 # Example notification in Webex Teams
-![](wxt_example_notification.jpg__)
+![](requests/wxt_example_notification.jpg)
