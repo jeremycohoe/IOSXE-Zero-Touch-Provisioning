@@ -1,0 +1,178 @@
+Initializing Hardware......
+
+System Bootstrap, Version 17.10.1r, RELEASE SOFTWARE (P)
+Compiled Tue 05/31/2022 11:15:29.07 by rel
+
+Current ROMMON image : Primary
+Last reset cause     : SoftwareReload
+C9300-24P platform with 8388608 Kbytes of main memory
+
+Preparing to autoboot. [Press Ctrl-C to interrupt]  0
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+#
+########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+
+
+
+*Mar 14 19:17:58.466: %IOSXEBOOT-4-SMART_LOG: (local/local): Thu Mar 14 19:17:58 Universal 2024 INFO: Starting SMART daemon
+
+Both links down, not waiting for other switches
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.11.1eft2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Wed 19-Oct-22 16:14 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+PLEASE READ THE FOLLOWING TERMS CAREFULLY. INSTALLING THE LICENSE OR
+LICENSE KEY PROVIDED FOR ANY CISCO SOFTWARE PRODUCT, PRODUCT FEATURE,
+AND/OR SUBSEQUENTLY PROVIDED SOFTWARE FEATURES (COLLECTIVELY, THE
+"SOFTWARE"), AND/OR USING SUCH SOFTWARE CONSTITUTES YOUR FULL
+ACCEPTANCE OF THE FOLLOWING TERMS. YOU MUST NOT PROCEED FURTHER IF YOU
+ARE NOT WILLING TO BE BOUND BY ALL THE TERMS SET FORTH HEREIN.
+
+Your use of the Software is subject to the Cisco End User License Agreement
+(EULA) and any relevant supplemental terms (SEULA) found at
+http://www.cisco.com/c/en/us/about/legal/cloud-and-software/software-terms.html.
+
+You hereby acknowledge and agree that certain Software and/or features are
+licensed for a particular term, that the license to such Software and/or
+features is valid only for the applicable term and that such Software and/or
+features may be shut down or otherwise terminated by Cisco after expiration
+of the applicable license term (e.g., 90-day trial period). Cisco reserves
+the right to terminate any such Software feature electronically or by any
+other means available. While Cisco may provide alerts, it is your sole
+responsibility to monitor your usage of any such term Software feature to
+ensure that your systems and networks are prepared for a shutdown of the
+Software feature.
+
+
+% Checking backup nvram
+% No config present. Using default config
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9300-24P (X86) processor with 1311380K/6147K bytes of memory.
+Processor board ID FCW2125L060
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+234430023K bytes of USB Flash at usbflash1:.
+
+Base Ethernet MAC Address          : X
+Motherboard Assembly Number        : Y
+Motherboard Serial Number          : Z
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9300-24P
+System Serial Number               : Y
+CLEI Code Number                   : M
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+Mar 14 19:19:11.972: %IOX-3-IOX_RESTARTABITLITY: R0/0: run_ioxn_caf: Stack is in N+1 mode, disabling sync for IOx restartability
+
+Autoinstall trying DHCPv4 on GigabitEthernet0/0
+
+Autoinstall trying DHCPv6 on GigabitEthernet0/0
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+*Mar 14 19:17:14.531: %IOSXE-0-PLATFORM: Switch 1 R0/0: udev: usb1: has been inserted
+Autoinstall trying DHCPv6 on GigabitEthernet0/0,Vlan1
+
+Autoinstall trying DHCPv4 on GigabitEthernet0/0,Vlan1
+
+Acquired IPv4 address 10.85.134.120 on Interface Vlan1
+Received following DHCPv4 options:
+        domain-name     : jcohoe-vnc2.cisco.com
+        dns-server-ip   : 64.102.6.247
+        si-addr         : 10.85.134.66
+
+CCO server (devicehelper.cisco.com.) resolved to ip (18.205.127.81) by (pid=562, pname=PnP Agent Discovery, time=19:20:25 UTC Thu Mar 14 2024)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+Guestshell destroyed successfully
+
+PnP HTTP timed out (1/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (2/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (3/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (4/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (5/10) on connection to PnP server (http://devicehelper.cisco.com.:80/pnp/HELLO)
+
+CCO server (devicehelper.cisco.com.) resolved to ip (52.203.231.173) by (pid=562, pname=PnP Agent Discovery, time=19:26:38 UTC Thu Mar 14 2024)
+
+PnP HTTP timed out (6/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (7/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (8/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (9/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (10/10) on connection to PnP server (http://devicehelper.cisco.com.:80/pnp/HELLO)
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]:
