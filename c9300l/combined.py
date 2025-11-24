@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """
 Unified Day0 Onboarding Script for Cisco Nexus (POAP) and Catalyst XE (ZTP)
-This script auto-detects the device type and applies the appropriate configuration.
+This script auto-detects the device type and applies the appropriate
+configuration.
+
+Based on Cisco official POAP and ZTP examples with enhancements.
 """
 
 import sys
@@ -9,6 +12,7 @@ import os
 import json
 import re
 import time
+import syslog
 
 # Try to import device-specific modules
 try:
@@ -60,17 +64,25 @@ def detect_device_type():
 
 def log_message(message):
     """
-    Log messages to console and optionally to file
+    Log messages to console, syslog, and optionally to file
+    Enhanced logging similar to official POAP script
     """
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
     log_msg = f"[{timestamp}] {message}"
     print(log_msg)
     sys.stdout.flush()
 
+    # Also log to syslog (priority 9 = info)
+    try:
+        syslog.syslog(9, log_msg)
+    except Exception:
+        pass  # Syslog may not be available in all environments
+
 
 def configure_nxos_device():
     """
     Configure Cisco Nexus (NX-OS) device via POAP
+    Enhanced with features from official Cisco POAP script
     """
     log_message("Starting NX-OS POAP Configuration")
 
@@ -78,49 +90,127 @@ def configure_nxos_device():
         # Import NX-OS specific modules
         from cli import cli, clid
 
-        # Example NX-OS configuration commands
-        nxos_config = [
-            "terminal dont-ask",
-            "configure terminal",
-            "hostname NXOS-SWITCH",
-            "feature interface-vlan",
-            "feature ssh",
-            "feature nxapi",
-            "username admin password admin123 role network-admin",
-            "vlan 10",
-            "  name DATA_VLAN",
-            "vlan 20",
-            "  name VOICE_VLAN",
-            "interface Ethernet1/1",
-            "  description UPLINK",
-            "  no switchport",
-            "  ip address 10.0.0.1/24",
-            "  no shutdown",
-            "interface mgmt0",
-            "  description MANAGEMENT",
-            "  ip address dhcp",
-            "  no shutdown",
-            "line vty",
-            "  exec-timeout 30",
-            "boot nxos bootflash:nxos.9.3.10.bin",
-            "copy running-config startup-config",
-        ]
+        # Get device information
+        try:
+            serial_num = os.environ.get('POAP_SERIAL', 'UNKNOWN')
+            log_message(f"Device Serial Number: {serial_num}")
+        except Exception as e:
+            log_message(f"Could not retrieve serial number: {str(e)}")
+            serial_num = "UNKNOWN"
 
-        log_message("Applying NX-OS configuration...")
-        for cmd in nxos_config:
-            log_message(f"Executing: {cmd}")
-            try:
-                output = cli(cmd)
-                if output:
-                    log_message(f"Output: {output}")
-            except Exception as e:
-                log_message(f"Error executing '{cmd}': {str(e)}")
+        # Create configuration file in bootflash
+        config_file_path = "/bootflash/poap_config.cfg"
+        log_message(f"Creating configuration file: {config_file_path}")
+
+        # Build NX-OS configuration
+        nxos_config = """
+! NX-OS Configuration via POAP
+hostname NXOS-SWITCH-POAP
+!
+feature interface-vlan
+feature ssh
+feature nxapi
+feature lldp
+!
+username admin password Cisco123 role network-admin
+enable secret Cisco123
+!
+vlan 10
+  name DATA_VLAN
+vlan 20
+  name VOICE_VLAN
+!
+interface Ethernet1/1
+  description UPLINK
+  no switchport
+  ip address 10.0.0.1/24
+  no shutdown
+!
+interface mgmt0
+  description MANAGEMENT
+  ip address dhcp
+  no shutdown
+!
+line vty
+  exec-timeout 30
+  session-limit 10
+!
+boot nxos bootflash:nxos.bin
+"""
+
+        # Write configuration to file
+        try:
+            with open(config_file_path, 'w') as f:
+                f.write(nxos_config.strip())
+            log_message("Configuration file created successfully")
+        except Exception as e:
+            log_message(f"Error creating config file: {str(e)}")
+            # Fall back to direct CLI commands
+            return apply_nxos_config_via_cli(nxos_config)
+
+        # Apply configuration using copy scheduled-config method
+        log_message("Applying configuration via scheduled-config...")
+        try:
+            # Copy config to scheduled-config for reload
+            cli("terminal dont-ask")
+            cli("copy bootflash:poap_config.cfg scheduled-config")
+            log_message("Configuration scheduled successfully")
+
+            # Also apply to running config immediately
+            cli("copy bootflash:poap_config.cfg running-config")
+            log_message("Configuration applied to running-config")
+
+            # Save to startup config
+            cli("copy running-config startup-config")
+            log_message("Configuration saved to startup-config")
+
+        except Exception as e:
+            log_message(f"Error applying configuration: {str(e)}")
+            # Try alternative method
+            return apply_nxos_config_via_cli(nxos_config)
 
         log_message("NX-OS configuration completed successfully")
         return True
 
     except Exception as e:
         log_message(f"Error during NX-OS configuration: {str(e)}")
+        return False
+
+
+def apply_nxos_config_via_cli(config_text):
+    """
+    Fallback method to apply NX-OS configuration line by line
+    """
+    from cli import cli
+
+    log_message("Using fallback CLI method for configuration")
+
+    # Split config into lines and filter
+    config_lines = [line.strip() for line in config_text.split('\n')
+                    if line.strip() and not line.strip().startswith('!')]
+
+    try:
+        cli("terminal dont-ask")
+        cli("configure terminal")
+
+        for line in config_lines:
+            if line:
+                log_message(f"Executing: {line}")
+                try:
+                    output = cli(line)
+                    if output:
+                        log_message(f"Output: {output}")
+                except Exception as e:
+                    log_message(f"Error on '{line}': {str(e)}")
+
+        cli("end")
+        cli("copy running-config startup-config")
+
+        log_message("Fallback configuration method completed")
+        return True
+
+    except Exception as e:
+        log_message(f"Fallback method failed: {str(e)}")
         return False
 
 
@@ -216,6 +306,15 @@ def main():
     log_message("UNIFIED DAY0 ONBOARDING SCRIPT")
     log_message("=" * 60)
 
+    # Log environment information
+    log_message("Environment Information:")
+    if 'POAP_SERIAL' in os.environ:
+        log_message(f"  Serial Number: {os.environ['POAP_SERIAL']}")
+    if 'POAP_PHASE' in os.environ:
+        log_message(f"  POAP Phase: {os.environ['POAP_PHASE']}")
+    if 'POAP_INTF' in os.environ:
+        log_message(f"  Interface: {os.environ['POAP_INTF']}")
+
     # Detect device type
     device_type = detect_device_type()
     log_message(f"Detected Device Type: {device_type}")
@@ -228,7 +327,10 @@ def main():
         success = configure_iosxe_device()
     else:
         log_message("ERROR: Unable to detect device type!")
-        log_message("This script supports only Cisco Nexus (NX-OS) and Catalyst (IOS-XE)")
+        log_message(
+            "This script supports only Cisco Nexus (NX-OS) "
+            "and Catalyst (IOS-XE)"
+        )
         sys.exit(1)
 
     if success:
