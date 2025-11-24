@@ -1,0 +1,187 @@
+
+Initializing Hardware......
+
+System Bootstrap, Version 17.12.1r, RELEASE SOFTWARE (P)
+Compiled Mon 04/24/2023 22:21:00.36 by rel
+
+Current ROMMON image : Primary
+Last reset cause     : SoftwareReload
+C9300-24P platform with 8388608 Kbytes of main memory
+
+Preparing to autoboot. [Press Ctrl-C to interrupt]  0
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+#
+################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+
+
+
+*Nov 24 18:31:38.584: %IOSXEBOOT-4-SMART_LOG: (local/local): Mon Nov 24 18:31:38 Universal 2025 INFO: Starting SMART daemon
+
+Both links down, not waiting for other switches
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.18.1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 06-Aug-25 03:45 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+Please read the following carefully before proceeding. By downloading,
+installing, and/or using any Cisco software product, application, feature,
+license, or license key (collectively, the "Software"), you accept and
+agree to the following terms. If you do not agree, do not proceed and do not
+use this Software.
+
+This Software and its use are governed by Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+If you have a negotiated agreement with Cisco that includes this Software, the
+terms of that agreement apply as well. In the event of a conflict, the order
+of precedence stated in your negotiated agreement controls.
+
+Cisco Software is licensed on a term and/or subscription-basis. The license to
+the Software is valid only for the duration of the specified term, or in the
+case of a subscription-based license, only so long as all required subscription
+payments are current and fully paid-up. While Cisco may provide you
+licensing-related alerts, it is your sole responsibility to monitor your usage.
+Using Cisco Software without a valid license is not permitted and may result in
+fees charged to your account. Cisco reserves the right to terminate access to,
+or restrict the functionality of, any Cisco Software, or any features thereof,
+that are being used without a valid license.
+
+
+% Checking backup nvram
+% No config present. Using default config
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9300-24P (X86) processor with 1050581K/6147K bytes of memory.
+Processor board ID FCW2241AHAT
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+117219783K bytes of USB Flash at usbflash1:.
+
+Base Ethernet MAC Address          : 0
+Motherboard Assembly Number        : 3
+Motherboard Serial Number          : 9
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9300-24P
+System Serial Number               : T
+CLEI Code Number                   : B
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+Nov 24 18:32:52.436: %IOX-3-IOX_RESTARTABITLITY: R0/0: run_ioxn_caf: Stack is in N+1 mode, disabling sync for IOx restartability
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+*Nov 24 18:30:56.583: %IOSXE-0-PLATFORM: Switch 1 R0/0: udev: usb1: has been inserted
+Autoinstall trying DHCPv6 on Vlan1
+
+Autoinstall trying DHCPv4 on Vlan1
+
+Acquired IPv4 address 10.1.1.155 on Interface Vlan1
+Received following DHCPv4 options:
+        domain-name     : ios-xe-programmability-lab.cisco.com
+        bootfile        : http://10.1.1.3/combined.py
+        dns-server-ip   : 128.107.212.175
+        si-addr         : 10.1.1.3
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+
+Attempting bootfile http://10.1.1.3/combined.py
+
+Loading http://10.1.1.3/combined.py
+Loading http://10.1.1.3/combined.py day0guestshell activated successfully
+Current state is: ACTIVATED
+day0guestshell started successfully
+Current state is: RUNNING
+Guestshell enabled successfully
+
+CCO server (devicehelper.cisco.com.) can't be resolved (1/5) by (pid=584, pname=PnP Agent Discovery, time=18:34:19 UTC Mon Nov 24 2025)
+[2025-11-24 18:34:20] ============================================================
+[2025-11-24 18:34:20] UNIFIED DAY0 ONBOARDING SCRIPT
+[2025-11-24 18:34:20] ============================================================
+[2025-11-24 18:34:20] Detected Device Type: IOS-XE
+[2025-11-24 18:34:20] This is a Cisco Catalyst device - using ZTP workflow
+[2025-11-24 18:34:20] Starting IOS-XE ZTP Configuration
+[2025-11-24 18:34:20] Applying IOS-XE configuration block...
+[2025-11-24 18:34:35] Configuration output: Line 1 SUCCESS:  hostname IOSXE-SWITCH-SETBY-ZTP
+Line 2 SUCCESS:  !
+Line 3 SUCCESS:  !
+Line 4 SUCCESS:  username admin privilege 15 secret Cisco123
+Line 5 SUCCESS:  enable secret Cisco123
+Line 6 SUCCESS:  !
+Line 7 SUCCESS:  vlan 10
+Line 8 SUCCESS:  name DATA_VLAN
+Line 9 SUCCESS:  vlan 20
+Line 10 SUCCESS:  name VOICE_VLAN
+Line 11 SUCCESS:  !
+Line 12 SUCCESS:  interface GigabitEthernet1/0/1
+Line 13 SUCCESS:  description UPLINK
+Line 14 SUCCESS:  no switchport
+Line 15 SUCCESS:  ip address 10.0.0.2 255.255.255.0
+Line 16 SUCCESS:  no shutdown
+Line 17 SUCCESS:  !
+Line 18 SUCCESS:  interface Vlan1
+Line 19 SUCCESS:  description MANAGEMENT
+Line 20 SUCCESS:  ip address dhcp
+Line 21 SUCCESS:  no shutdown
+Line 22 SUCCESS:  !
+Line 23 SUCCESS:  ip ssh version 2
+Line 24 SUCCESS:  !
+Line 25 SUCCESS:  line vty 0 15
+Line 26 SUCCESS:  transport input all
+Line 27 SUCCESS:  login local
+Line 28 SUCCESS:  exec-timeout 30 0
+Line 29 SUCCESS:  !
+Line 30 SUCCESS:  end
+
+[2025-11-24 18:34:35] Generating RSA keys...
+[2025-11-24 18:34:35] RSA key generation note: CLI syntax error or execution Failure
+[2025-11-24 18:34:35] Saving configuration...
+[2025-11-24 18:34:39] Save output: Building configuration...
+[OK]
+
+[2025-11-24 18:34:39] IOS-XE configuration completed successfully
+[2025-11-24 18:34:39] ============================================================
+[2025-11-24 18:34:39] ONBOARDING COMPLETED SUCCESSFULLY
+[2025-11-24 18:34:39] ============================================================
+
+Guestshell destroyed successfully
+Script execution success!
+
+
+
+Press RETURN to get started!
+
