@@ -1,0 +1,453 @@
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.15.1, RELEASE SOFTWARE (fc4)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Sun 11-Aug-24 22:16 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+PLEASE READ THE FOLLOWING TERMS CAREFULLY. INSTALLING THE LICENSE OR
+LICENSE KEY PROVIDED FOR ANY CISCO SOFTWARE PRODUCT, PRODUCT FEATURE,
+AND/OR SUBSEQUENTLY PROVIDED SOFTWARE FEATURES (COLLECTIVELY, THE
+"SOFTWARE"), AND/OR USING SUCH SOFTWARE CONSTITUTES YOUR FULL
+ACCEPTANCE OF THE FOLLOWING TERMS. YOU MUST NOT PROCEED FURTHER IF YOU
+ARE NOT WILLING TO BE BOUND BY ALL THE TERMS SET FORTH HEREIN.
+
+Your use of the Software is subject to Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+
+You hereby acknowledge and agree that certain Software and/or features are
+licensed for a particular term, that the license to such Software and/or
+features is valid only for the applicable term and that such Software and/or
+features may be shut down or otherwise terminated by Cisco after expiration
+of the applicable license term (e.g., 90-day trial period). Cisco reserves
+the right to terminate any such Software feature electronically or by any
+other means available. While Cisco may provide alerts, it is your sole
+responsibility to monitor your usage of any such term Software feature to
+ensure that your systems and networks are prepared for a shutdown of the
+Software feature.
+
+
+% Checking backup nvram
+% No config present. Using default config
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9300-24T (X86) processor with 1054595K/6147K bytes of memory.
+Processor board ID FCW2129L05N
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+234430023K bytes of USB Flash at usbflash1:.
+0K bytes of Cloud S3 Storage at cloudfs:.
+
+Base Ethernet MAC Address          : a0:f8:49:15:1e:80
+Motherboard Assembly Number        : 73-17952-06
+Motherboard Serial Number          : FOC212869HN
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9300-24T
+System Serial Number               : FCW2129L05N
+CLEI Code Number                   : INM2X10ARA
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+Dec  8 21:03:12.510: %IOX-3-IOX_RESTARTABITLITY: R0/0: run_ioxn_caf: Stack is in N+1 mode, disabling sync for IOx restartability
+
+Autoinstall trying DHCPv4 on GigabitEthernet0/0
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+Autoinstall trying DHCPv6 on GigabitEthernet0/0
+
+*Dec  8 21:01:13.567: %IOSXE-0-PLATFORM: Switch 1 R0/0: udev: usb1: has been inserted
+Autoinstall trying DHCPv6 on GigabitEthernet0/0,Vlan1
+
+Autoinstall trying DHCPv4 on GigabitEthernet0/0,Vlan1
+
+Acquired IPv4 address 10.1.1.152 on Interface GigabitEthernet0/0
+Received following DHCPv4 options:
+        domain-name     : ios-xe-programmability-lab.cisco.com
+        bootfile        : http://10.1.1.3/combined.py
+        dns-server-ip   : 128.107.212.175
+        si-addr         : 10.1.1.3
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+
+Attempting bootfile http://10.1.1.3/combined.py
+
+Loading http://10.1.1.3/combined.py
+Loading http://10.1.1.3/combined.py day0guestshell activated successfully
+Current state is: ACTIVATED
+day0guestshell started successfully
+Current state is: RUNNING
+Guestshell enabled successfully
+
+CCO server (devicehelper.cisco.com.) can't be resolved (1/5) by (pid=575, pname=PnP Agent Discovery, time=21:04:10 UTC Mon Dec 8 2025)
+
+    ========================================================================
+    Cisco Catalyst 9000 ZTP NETCONF Software Upgrade
+    ========================================================================
+    Method:          NETCONF RPC (Cisco-IOS-XE-install-rpc)
+    Target Version:  17.18.01
+    Expected Time:   ~2 minutes (script) + 5-7 minutes (upgrade)
+    ========================================================================
+
+[2025-12-08 21:04:11] INFO: === ZTP NETCONF Software Upgrade Started ===
+[2025-12-08 21:04:11] INFO: Checking current software version...
+[2025-12-08 21:04:11] INFO: Current version: 17.15.01
+[2025-12-08 21:04:11] INFO: Checking NETCONF API compatibility...
+[2025-12-08 21:04:11] INFO: Version 17.15.01 supports NETCONF install RPC
+[2025-12-08 21:04:11] INFO: Importing NETCONF libraries...
+[2025-12-08 21:04:12] INFO: NETCONF libraries imported successfully
+[2025-12-08 21:04:12] INFO: Current version: 17.15.01
+[2025-12-08 21:04:12] INFO: Target version: 17.18.01
+[2025-12-08 21:04:12] INFO: Target image: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:04:12] INFO: Verifying image file: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:04:12] ERROR: Image file not found: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:04:12] WARNING: Image not found on device, attempting download...
+[2025-12-08 21:04:12] INFO: Image not found, attempting to download...
+[2025-12-08 21:04:12] INFO: Download URL: http://10.1.1.3/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:04:12] INFO: Destination: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:04:12] INFO: Checking available space on usbflash1:...
+[2025-12-08 21:04:13] INFO: Free space: 203.50 GB
+[2025-12-08 21:04:13] INFO: Starting download (this may take 10-15 minutes)...
+[2025-12-08 21:04:13] INFO: Executing: copy http://10.1.1.3/cat9k_iosxe.17.18.01.SPA.bin usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:06:10] INFO: Download completed in 116 seconds
+[2025-12-08 21:06:10] INFO: Verifying image file: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:06:10] INFO: Image file verified: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:06:10] INFO: Image successfully downloaded and verified
+[2025-12-08 21:06:10] INFO: Verifying image checksum...
+[2025-12-08 21:06:10] INFO: Calculating MD5 checksum for: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:06:44] INFO: Calculated MD5: 3d95fc4dffa160507e927612ce38a7ee
+[2025-12-08 21:06:44] INFO: Expected MD5: 3d95fc4dffa160507e927612ce38a7ee
+[2025-12-08 21:06:44] INFO: Actual MD5:   3d95fc4dffa160507e927612ce38a7ee
+[2025-12-08 21:06:44] SUCCESS: MD5 checksum verified successfully
+[2025-12-08 21:06:44] INFO: Ensuring NETCONF is enabled from guestshell...
+[2025-12-08 21:06:49] INFO: Enabling NETCONF service...
+Line 1 SUCCESS:  netconf-yang
+
+[2025-12-08 21:06:50] INFO: Enabling NETCONF from guestshell (takes ~100 seconds)...
+[2025-12-08 21:08:55] INFO: NETCONF enabled in 125 seconds
+[2025-12-08 21:08:55] INFO: Ensuring NETCONF is enabled from guestshell...
+[2025-12-08 21:08:56] INFO: NETCONF already enabled globally
+[2025-12-08 21:08:56] INFO: Enabling NETCONF from guestshell (takes ~100 seconds)...
+[2025-12-08 21:09:04] INFO: NETCONF enabled in 7 seconds
+[2025-12-08 21:09:04] INFO: Waiting 10 seconds for NETCONF service to be ready...
+[2025-12-08 21:09:14] INFO: Creating NETCONF connection...
+[2025-12-08 21:09:14] INFO: Connection attempt 1 of 5...
+[2025-12-08 21:09:15] INFO: NETCONF connection established on attempt 1
+[2025-12-08 21:09:15] INFO: Testing NETCONF connection by getting hostname...
+[2025-12-08 21:09:15] INFO: Retrieved hostname via NETCONF: Switch
+[2025-12-08 21:09:15] INFO: NETCONF connection validated successfully
+[2025-12-08 21:09:15] INFO: Checking current install status...
+[2025-12-08 21:09:15] INFO: Querying install status via NETCONF...
+[2025-12-08 21:09:15] INFO: Install operational data:
+[2025-12-08 21:09:15] INFO:
+<?xml version="1.0" ?>
+<rpc-reply message-id="urn:uuid:739d1930-a4fa-44a3-bd17-bb2fbcbc2ccb" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<data/>
+</rpc-reply>
+
+[2025-12-08 21:09:15] INFO: === Initiating Software Upgrade ===
+[2025-12-08 21:09:15] INFO: Current: 17.15.01 -> Target: 17.18.01
+[2025-12-08 21:09:15] INFO: Image: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:09:15] INFO:
+[2025-12-08 21:09:15] INFO: Sending NETCONF activate RPC...
+[2025-12-08 21:09:15] INFO: Preparing NETCONF install RPC...
+[2025-12-08 21:09:15] INFO: Operation UUID: 5f598b43-231c-4895-89f7-65e158c10842
+[2025-12-08 21:09:15] INFO: Sending install RPC for image: usbflash1:/cat9k_iosxe.17.18.01.SPA.bin
+[2025-12-08 21:09:15] INFO: RPC XML:
+<install xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-install-rpc">
+  <uuid>5f598b43-231c-4895-89f7-65e158c10842</uuid>
+  <one-shot>true</one-shot>
+  <path>usbflash1:/cat9k_iosxe.17.18.01.SPA.bin</path>
+</install>
+[2025-12-08 21:09:15] INFO: RPC Response received:
+[2025-12-08 21:09:15] INFO:
+<?xml version="1.0" ?>
+<rpc-reply message-id="urn:uuid:378bd0b0-15d7-4864-b5ce-10cf2f177607" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<ok/>
+</rpc-reply>
+
+[2025-12-08 21:09:15] SUCCESS: Activate RPC accepted - upgrade initiated!
+[2025-12-08 21:09:15] SUCCESS: === Upgrade RPC Successfully Sent ===
+[2025-12-08 21:09:15] INFO: Device will now install and reload automatically
+[2025-12-08 21:09:15] INFO: Expected timeline:
+[2025-12-08 21:09:15] INFO:   - Install process: ~1-2 minutes
+[2025-12-08 21:09:15] INFO:   - Microcode update: ~1-2 minutes
+[2025-12-08 21:09:15] INFO:   - Device reload: ~2-3 minutes
+[2025-12-08 21:09:15] INFO:   - Total downtime: ~5-7 minutes
+[2025-12-08 21:09:15] INFO:
+[2025-12-08 21:09:15] INFO: Auto-abort timer: 2 hours (7200 seconds)
+[2025-12-08 21:09:15] INFO: Post-reload actions required:
+[2025-12-08 21:09:15] INFO:   1. Verify: show version
+[2025-12-08 21:09:15] INFO:   2. Check status: show install summary
+[2025-12-08 21:09:15] INFO:   3. COMMIT within 2 hours: install commit
+[2025-12-08 21:09:15] INFO:      (or device will auto-rollback)
+[2025-12-08 21:09:15] INFO: NETCONF session closed
+[2025-12-08 21:09:15] INFO: === ZTP NETCONF Upgrade Script Complete ===
+[2025-12-08 21:09:15] INFO: Device will reload shortly...
+
+Guestshell destroyed successfully
+Script execution success!
+
+
+
+Press RETURN to get started!
+
+
+*Dec  8 21:10:10.223: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Dec  8 21:10:10.230: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell de-initilization API is being invoked
+*Dec  8 21:10:10.230: %PNP-6-PNP_PYTHON_SCRIPT_DONE: Python script (http://10.1.1.3/combined.py) done (1/3) via (script-file-exec) by (pid=603, pname=DHCP Autoinstall, time=21:10:10 UTC Mon Dec 8 2025)
+*Dec  8 21:10:10.230: AUTOINSTALL: script execution successful for Gi0/0.
+*Dec  8 21:10:10.230: %SYS-5-USERLOG_NOTICE: Message from tty0(user id: ): Device in day0 workflow, some non user-configured options may be enabled by default
+*Dec  8 21:10:10.235: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as vty0
+*Dec  8 21:13:43.411: %INSTALL-5-INSTALL_AUTO_ABORT_TIMER_PROGRESS: Switch 1 R0/0: install_mgr: Install auto abort timer will expire in 7200 seconds
+
+AppGigabitEthernet port has the latest Firmware
+                                               MM [1] MCU version 234 sw ver 230
+                                                                                MM [2] MCU version 234 sw ver 230
+
+
+                                                                                                                 MCU UPGRADE IN PROGRESS... PLEASE DO NOT POWER CYCLE!!
+
+                                   Front-end Microcode IMG MGR: found 4 microcode images for 1 device.
+                                                                                                      Image for front-end 0: /tmp/microcode_update/front_end/fe_type_6_0 update needed: no
+                                                      Image for front-end 0: /tmp/microcode_update/front_end/fe_type_6_1 update needed: yes
+       Image for front-end 0: /tmp/microcode_update/front_end/fe_type_6_2 update needed: yes
+                                                                                            Image for front-end 0: /tmp/microcode_update/front_end/fe_type_6_3 update needed: no
+
+                                            Front-end Microcode IMG MGR: Preparing to program device microcode...
+                                                                                                                 Front-end Microcode IMG MGR: Preparing to program device[0], index=0 ...
+594412 bytes.... Skipped[0].
+                            Front-end Microcode IMG MGR: Preparing to program device[0], index=1 ...
+579484 bytes.
+             Front-end Microcode IMG MGR: Programming device 0...rwRrrrrrrw..0%.............................................................
+*Dec  8 21:14:51.252: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30)...............................................10%............................................................................................................20%.................................
+*Dec  8 21:15:49.756: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30)..........................................................................30%................................................................................
+*Dec  8 21:16:38.126: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30)..............................40%..........................................................................................................50%.............................................
+*Dec  8 21:17:33.890: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30)................................................................60%.............................................................................................................70%.....
+*Dec  8 21:18:29.535: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30)......................................................................................................80%...............................................................................
+*Dec  8 21:19:26.052: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30)..............................90%...........................................................................................................100%
+                                       Front-end Microcode IMG MGR: Preparing to program device[0], index=2 ...
+24506 bytes.
+            Front-end Microcode IMG MGR: Programming device 0...rrrrrrw..0%....10%....20%......30%...40%....50%....
+*Dec  8 21:20:18.252: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30)...60%....70%.....80%....90%....100%wRr!
+                                                                   Front-end Microcode IMG MGR: Microcode programming complete for device 0.
+        Front-end Microcode IMG MGR: Preparing to program device[0], index=3 ...
+90974 bytes.... Skipped[3].
+                           Front-end Microcode IMG MGR: Microcode programming complete in 365 seconds
+
+
+MCU UPGRADE COMPLETED!!...
+*Dec  8 21:20:31.709: %INSTALL-5-INSTALL_COMPLETED_INFO: Switch 1 R0/0: install_mgr: Completed install add_activate_commit
+Chassis 1 reloading, reason - Reload command
+Dec  8 21:20:36.468: %PMAN-5-EXITACTION: F0/0: pvp: Process manager is exiting: reload fp action requested
+Dec  8 21:20:40.765: %PMAN-5-EXITACTION: R0/0: pvp: Process manager is exiting: rp processes exit with reload switch code
+
+
+
+Initializing Hardware......
+
+System Bootstrap, Version 17.12.1r, RELEASE SOFTWARE (P)
+Compiled Mon 04/24/2023 22:21:00.36 by rel
+
+Current ROMMON image : Primary
+Last reset cause     : SoftwareReload
+C9300-24T platform with 8388608 Kbytes of main memory
+
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+#
+################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+
+
+
+*Dec 08 21:22:30.177: %IOSXEBOOT-4-SMART_LOG: (local/local): Mon Dec 8 21:22:30 Universal 2025 INFO: Starting SMART daemon
+
+Both links down, not waiting for other switches
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.18.1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 06-Aug-25 03:45 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+Please read the following carefully before proceeding. By downloading,
+installing, and/or using any Cisco software product, application, feature,
+license, or license key (collectively, the "Software"), you accept and
+agree to the following terms. If you do not agree, do not proceed and do not
+use this Software.
+
+This Software and its use are governed by Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+If you have a negotiated agreement with Cisco that includes this Software, the
+terms of that agreement apply as well. In the event of a conflict, the order
+of precedence stated in your negotiated agreement controls.
+
+Cisco Software is licensed on a term and/or subscription-basis. The license to
+the Software is valid only for the duration of the specified term, or in the
+case of a subscription-based license, only so long as all required subscription
+payments are current and fully paid-up. While Cisco may provide you
+licensing-related alerts, it is your sole responsibility to monitor your usage.
+Using Cisco Software without a valid license is not permitted and may result in
+fees charged to your account. Cisco reserves the right to terminate access to,
+or restrict the functionality of, any Cisco Software, or any features thereof,
+that are being used without a valid license.
+
+
+% Checking backup nvram
+% No config present. Using default config
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9300-24T (X86) processor with 1050581K/6147K bytes of memory.
+Processor board ID FCW2129L05N
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+234430023K bytes of USB Flash at usbflash1:.
+0K bytes of Cloud S3 Storage at cloudfs:.
+
+Base Ethernet MAC Address          : a0:f8:49:15:1e:80
+Motherboard Assembly Number        : 73-17952-06
+Motherboard Serial Number          : FOC212869HN
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9300-24T
+System Serial Number               : FCW2129L05N
+CLEI Code Number                   : INM2X10ARA
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+Dec  8 21:23:48.943: %IOX-3-IOX_RESTARTABITLITY: R0/0: run_ioxn_caf: Stack is in N+1 mode, disabling sync for IOx restartability
+
+Autoinstall trying DHCPv4 on GigabitEthernet0/0
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+Autoinstall trying DHCPv6 on GigabitEthernet0/0
+
+*Dec  8 21:21:47.513: %IOSXE-0-PLATFORM: Switch 1 R0/0: udev: usb1: has been inserted
+Autoinstall trying DHCPv6 on GigabitEthernet0/0,Vlan1
+
+Autoinstall trying DHCPv4 on GigabitEthernet0/0,Vlan1
+
+Acquired IPv4 address 10.1.1.152 on Interface GigabitEthernet0/0
+Received following DHCPv4 options:
+        domain-name     : ios-xe-programmability-lab.cisco.com
+        bootfile        : http://10.1.1.3/combined.py
+        dns-server-ip   : 128.107.212.175
+        si-addr         : 10.1.1.3
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+
+Attempting bootfile http://10.1.1.3/combined.py
+
+Loading http://10.1.1.3/combined.py
+Loading http://10.1.1.3/combined.py day0guestshell activated successfully
+Current state is: ACTIVATED
+day0guestshell started successfully
+Current state is: RUNNING
+Guestshell enabled successfully
+
+CCO server (devicehelper.cisco.com.) can't be resolved (1/5) by (pid=585, pname=PnP Agent Discovery, time=21:24:47 UTC Mon Dec 8 2025)
+
+    ========================================================================
+    Cisco Catalyst 9000 Universal ZTP Software Upgrade
+    ========================================================================
+    Target Version:  17.18.01
+    Auto-selects:    NETCONF (17.6+) or EEM (<17.6 w/DNA Advantage)
+    ========================================================================
+
+[2025-12-08 21:24:48] INFO: === Universal ZTP Software Upgrade Started ===
+[2025-12-08 21:24:48] INFO: Checking current software version...
+[2025-12-08 21:24:48] INFO: Current version: 17.18.01
+[2025-12-08 21:24:48] INFO: Checking license level...
+[2025-12-08 21:24:49] INFO: License output received, parsing...
+[2025-12-08 21:24:49] SUCCESS: DNA Advantage license detected
+[2025-12-08 21:24:49] INFO: Determining upgrade method...
+[2025-12-08 21:24:49] SUCCESS: Version 17.18.01: NETCONF method selected
+[2025-12-08 21:24:49] SUCCESS: Already running target version 17.18.01!
+[2025-12-08 21:24:49] INFO: No upgrade needed - exiting
+
+Guestshell destroyed successfully
+Script execution success!
+
+
+
+Press RETURN to get started!
+
+
+*Dec  8 21:25:00.007: yang-infra: Default hostkey created (NETCONF_SSH_RSA_KEY)
+*Dec  8 21:25:00.026: yang-infra: Netconf SSH RSA key generated
+*Dec  8 21:25:00.927: %UICFGEXP-6-SERVER_NOTIFIED_STOP: Switch 1 R0/0: psd: Server iox has been notified to stop
+*Dec  8 21:25:02.035: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Dec  8 21:25:02.035: %PNP-6-PNP_SAVING_TECH_SUMMARY: Saving PnP tech summary (/pnp-tech/pnp-tech-discovery-summary)... Please wait. Do not interrupt.
+*Dec  8 21:25:02.199: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Dec  8 21:25:02.435: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Dec  8 21:25:02.642: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Dec  8 21:25:02.767: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Dec  8 21:25:02.906: %PNP-6-PNP_SUDI_UPDATE: Device SUDI [PID:C9300-24T,SN:FCW2129L05N] identified
+*Dec  8 21:25:03.493: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty0
+*Dec  8 21:25:03.595: %PNP-6-PNP_TECH_SUMMARY_SAVED_OK: PnP tech summary (/pnp-tech/pnp-tech-discovery-summary) saved successfully (elapsed time: 2 seconds).
+*Dec  8 21:25:03.595: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Discovery Aborted)
+*Dec  8 21:25:04.956: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/24 (1), with XE-LAB-TOR1 TenGigabitEthernet1/0/30 (30).
+*Dec  8 21:25:05.405: %IOXN_APP-6-IOX_START_STOP_REQ: Got IOX DOWN COMPLETE event, invoking registered callback(s)
+
