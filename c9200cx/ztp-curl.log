@@ -1,0 +1,177 @@
+
+
+
+Initializing Hardware...
+SD init failed.
+
+System Bootstrap, Version 17.18.1r [FC2], RELEASE SOFTWARE (P)
+Compiled Wed 05/07/2025 15:42:44 by rel
+
+Current ROMMON image : Primary
+C9200CX-8P-2X2G platform with 4194304 Kbytes of main memory
+
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+
+##############
+
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.18.1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 06-Aug-25 03:51 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+Please read the following carefully before proceeding. By downloading,
+installing, and/or using any Cisco software product, application, feature,
+license, or license key (collectively, the "Software"), you accept and
+agree to the following terms. If you do not agree, do not proceed and do not
+use this Software.
+
+This Software and its use are governed by Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+If you have a negotiated agreement with Cisco that includes this Software, the
+terms of that agreement apply as well. In the event of a conflict, the order
+of precedence stated in your negotiated agreement controls.
+
+Cisco Software is licensed on a term and/or subscription-basis. The license to
+the Software is valid only for the duration of the specified term, or in the
+case of a subscription-based license, only so long as all required subscription
+payments are current and fully paid-up. While Cisco may provide you
+licensing-related alerts, it is your sole responsibility to monitor your usage.
+Using Cisco Software without a valid license is not permitted and may result in
+fees charged to your account. Cisco reserves the right to terminate access to,
+or restrict the functionality of, any Cisco Software, or any features thereof,
+that are being used without a valid license.
+
+
+% Failed to initialize nvram
+% Failed to initialize backup nvram
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9200CX-8P-2X2G (ARM64) processor with 630167K/3071K bytes of memory.
+Processor board ID FJC27271B8C
+2048K bytes of non-volatile configuration memory.
+4011284K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+4928512K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 48:1b:a4:47:b6:00
+Motherboard Assembly Number        : 73-20601-04
+Motherboard Serial Number          : FJZ272610KM
+Model Revision Number              : D0
+Motherboard Revision Number        : B0
+Model Number                       : C9200CX-8P-2X2G
+System Serial Number               : FJC27271B8C
+CLEI Code Number                   : INMKK00BRA
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+Autoinstall trying DHCPv4 on Vlan1
+
+Autoinstall trying DHCPv6 on Vlan1
+
+Acquired IPv4 address 10.85.134.231 on Interface Vlan1
+Received following DHCPv4 options:
+        domain-name     : jcohoe-vnc2.knoppix.ca
+        bootfile        : http://10.85.134.200/ztp.py
+        dns-server-ip   : 64.102.6.247
+        si-addr         : 10.85.134.200
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+
+Attempting bootfile http://10.85.134.200/ztp.py
+
+Loading http://10.85.134.200/ztp.py
+Loading http://10.85.134.200/ztp.py
+CCO server (devicehelper.cisco.com.) resolved to ip (18.205.127.81) by (pid=481, pname=PnP Agent Discovery, time=01:26:11 UTC Sat Dec 13 2025)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+day0guestshell activated successfully
+Current state is: ACTIVATED
+day0guestshell started successfully
+Current state is: RUNNING
+Guestshell enabled successfully
+
+ *** Use os.system to curl GET some file ***
+
+
+ *** curl http://128.107.223.248/c9200cx.txt
+
+Wed Sep  4 11:50:46 PDT 2024
+Wed Sep  4 11:50:53 PDT 2024
+Wed Sep  4 11:50:54 PDT 2024
+Wed Sep  4 11:50:54 PDT 2024
+! Jeremy was here 12-DEC-2025 friday-night-lets-goo
+Fri Dec 12 16:20:12 PST 2025
+Fri Dec 12 16:20:13 PST 2025
+Fri Dec 12 16:20:13 PST 2025
+Fri Dec 12 16:20:14 PST 2025
+
+ *** Use subprocess to curl GET some file ***
+
+
+ *** /usr/bin/curl http://128.107.223.248/c9200cx.txt ***
+
+Wed Sep  4 11:50:46 PDT 2024
+Wed Sep  4 11:50:53 PDT 2024
+Wed Sep  4 11:50:54 PDT 2024
+Wed Sep  4 11:50:54 PDT 2024
+! Jeremy was here 12-DEC-2025 friday-night-lets-goo
+Fri Dec 12 16:20:12 PST 2025
+Fri Dec 12 16:20:13 PST 2025
+Fri Dec 12 16:20:13 PST 2025
+Fri Dec 12 16:20:14 PST 2025
+None
+
+Guestshell destroyed successfully
+Script execution success!
+
+
+
+Press RETURN to get started!
+
+
+*Dec 13 01:27:05.263: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Dec 13 01:27:05.357: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Dec 13 01:27:05.387: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Dec 13 01:27:05.401: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell de-initilization API is being invoked
+
+*Dec 13 01:27:05.403: %PNP-6-PNP_PYTHON_SCRIPT_DONE: Python script (http://10.85.134.200/ztp.py) done (1/3) via (script-file-exec) by (pid=503, pname=DHCP Autoinstall, time=01:27:05 UTC Sat Dec 13 2025)
+*Dec 13 01:27:05.403: AUTOINSTALL: script execution successful for Vl1.
+*Dec 13 01:27:05.403: %SYS-5-USERLOG_NOTICE: Message from tty0(user id: ): Device in day0 workflow, some non user-configured options may be enabled by default
+*Dec 13 01:27:07.315: %LINK-5-CHANGED: Interface VirtualPortGroup31, changed state to administratively down
+*Dec 13 01:27:06.968: %UICFGEXP-6-SERVER_NOTIFIED_STOP: Switch 1 R0/0: psd: Server iox has been notified to stop
+*Dec 13 01:27:08.316: %LINEPROTO-5-UPDOWN: Line protocol on Interface VirtualPortGroup31, changed state to down
+*Dec 13 01:27:09.569: %IOXN_APP-6-IOX_START_STOP_REQ: Got IOX DOWN COMPLETE event, invoking registered callback(s)
