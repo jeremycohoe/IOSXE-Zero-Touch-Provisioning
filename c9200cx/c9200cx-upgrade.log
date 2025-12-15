@@ -1,0 +1,346 @@
+Initializing Hardware...
+SD init failed.
+
+System Bootstrap, Version 17.18.1r [FC2], RELEASE SOFTWARE (P)
+Compiled Wed 05/07/2025 15:42:44 by rel
+
+Current ROMMON image : Primary
+C9200CX-8P-2X2G platform with 4194304 Kbytes of main memory
+
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+
+##############
+
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.18.1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 06-Aug-25 03:51 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+Please read the following carefully before proceeding. By downloading,
+installing, and/or using any Cisco software product, application, feature,
+license, or license key (collectively, the "Software"), you accept and
+agree to the following terms. If you do not agree, do not proceed and do not
+use this Software.
+
+This Software and its use are governed by Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+If you have a negotiated agreement with Cisco that includes this Software, the
+terms of that agreement apply as well. In the event of a conflict, the order
+of precedence stated in your negotiated agreement controls.
+
+Cisco Software is licensed on a term and/or subscription-basis. The license to
+the Software is valid only for the duration of the specified term, or in the
+case of a subscription-based license, only so long as all required subscription
+payments are current and fully paid-up. While Cisco may provide you
+licensing-related alerts, it is your sole responsibility to monitor your usage.
+Using Cisco Software without a valid license is not permitted and may result in
+fees charged to your account. Cisco reserves the right to terminate access to,
+or restrict the functionality of, any Cisco Software, or any features thereof,
+that are being used without a valid license.
+
+
+% Failed to initialize nvram
+% Failed to initialize backup nvram
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9200CX-8P-2X2G (ARM64) processor with 630151K/3071K bytes of memory.
+Processor board ID FJC27271B8C
+2048K bytes of non-volatile configuration memory.
+4011284K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+4928512K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 48:1b:a4:47:b6:00
+Motherboard Assembly Number        : 73-20601-04
+Motherboard Serial Number          : FJZ272610KM
+Model Revision Number              : D0
+Motherboard Revision Number        : B0
+Model Number                       : C9200CX-8P-2X2G
+System Serial Number               : FJC27271B8C
+CLEI Code Number                   : INMKK00BRA
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+Autoinstall trying DHCPv4 on Vlan1
+
+Autoinstall trying DHCPv6 on Vlan1
+
+Acquired IPv4 address 10.85.134.231 on Interface Vlan1
+Received following DHCPv4 options:
+        domain-name     : jcohoe-vnc2.cisco.com
+        bootfile        : http://10.85.134.200/ztp.py
+        dns-server-ip   : 64.102.6.247
+        si-addr         : 10.85.134.200
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+
+Attempting bootfile http://10.85.134.200/ztp.py
+
+Loading http://10.85.134.200/ztp.py
+Loading http://10.85.134.200/ztp.py
+CCO server (devicehelper.cisco.com.) resolved to ip (18.205.127.81) by (pid=481, pname=PnP Agent Discovery, time=17:29:34 UTC Mon Dec 15 2025)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+day0guestshell activated successfully
+Current state is: ACTIVATED
+day0guestshell started successfully
+Current state is: RUNNING
+Guestshell enabled successfully
+
+
+   *** Cisco 9200CX ZTP Script
+
+
+
+
+   *** Stop prompts
+
+
+Line 1 SUCCESS:  file prompt quiet
+Line 2 SUCCESS:  end
+
+
+
+   *** Copy image to flash: ***
+
+
+
+PnP HTTP timed out (1/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (2/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+PnP HTTP timed out (3/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+Accessing http://10.85.134.200/cat9k_lite_iosxe.17.15.04.SPA.bin...
+Loading http://10.85.134.200/cat9k_lite_iosxe.17.15.04.SPA.bin !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+503782075 bytes copied in 431.804 secs (1166692 bytes/sec)
+
+
+
+   *** Copy config file to running-config: ***
+
+
+Accessing http://10.85.134.200/asw40.ams004.conf...
+Loading http://10.85.134.200/asw40.ams004.conf
+30 bytes copied in 0.052 secs (577 bytes/sec)
+
+
+
+   *** Generate SSH key ***
+
+
+The name for the keys will be: jcohoe-setby-ztp.jcohoe-vnc2.cisco.com
+% The key modulus size is 4096 bits
+% Generating crypto RSA keys in background ...
+
+
+
+   *** Enable prompts
+
+
+Line 1 SUCCESS:  no file prompt quiet
+Line 2 SUCCESS:  end
+
+
+
+   *** Copy running-config to startup: ***
+
+
+Building configuration...
+[OK]
+
+Line 1 SUCCESS:  event manager applet upgrade authorization bypass
+Line 2 SUCCESS:  event none sync yes maxrun 3600 ;
+Line 3 SUCCESS:  action 1.0 syslog facility "EEM" msg "Initiating ZTP for the device"
+Line 4 SUCCESS:  action 1.1 cli command "enable"
+Line 5 SUCCESS:  action 1.2 cli command "configure term"
+Line 6 SUCCESS:  action 1.3 cli command "no file prompt quiet"
+Line 7 SUCCESS:  action 1.4 cli command "exit"
+Line 8 SUCCESS:  action 1.5 cli command "terminal length 0"
+Line 9 SUCCESS:  action 1.6 cli command "write memory"
+Line 10 SUCCESS:  action 1.7 cli command "install add file bootflash:cat9k_lite_iosxe.17.15.04.SPA.bin activate commit prompt-level none"
+
+
+ Upgrades happens as a background task. The switch will reboot in 5-10 minutes
+
+
+Guestshell destroyed successfully
+Script execution success!
+
+
+
+Press RETURN to get started!
+
+
+*Dec 15 17:38:27.497: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Dec 15 17:38:27.577: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Dec 15 17:38:27.595: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+*Dec 15 17:38:27.615: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell de-initilization API is being invoked
+
+*Dec 15 17:38:27.616: %PNP-6-PNP_PYTHON_SCRIPT_DONE: Python script (http://10.85.134.200/ztp.py) done (1/3) via (script-file-exec) by (pid=503, pname=DHCP Autoinstall, time=17:38:27 UTC Mon Dec 15 2025)
+*Dec 15 17:38:27.617: AUTOINSTALL: script execution successful for Vl1.
+*Dec 15 17:38:27.617: %SYS-5-USERLOG_NOTICE: Message from tty0(user id: ): Device in day0 workflow, some non user-configured options may be enabled by default
+*Dec 15 17:38:29.522: %LINK-5-CHANGED: Interface VirtualPortGroup31, changed state to administratively down
+*Dec 15 17:38:29.192: %UICFGEXP-6-SERVER_NOTIFIED_STOP: Switch 1 R0/0: psd: Server iox has been notified to stop
+*Dec 15 17:38:30.523: %LINEPROTO-5-UPDOWN: Line protocol on Interface VirtualPortGroup31, changed state to down
+*Dec 15 17:38:31.954: %IOXN_APP-6-IOX_START_STOP_REQ: Got IOX DOWN COMPLETE event, invoking registered callback(s)
+
+*Dec 15 17:38:54.881: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/1 (1), with JCOHOE-C9300LM-FRONT GigabitEthernet1/0/9 (301).
+PnP HTTP timed out (4/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+*Dec 15 17:39:04.971: %PNP-3-PNP_HTTP_TIMED_OUT: PnP HTTP timed out (4/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+*Dec 15 17:39:47.778: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/1 (1), with JCOHOE-C9300LM-FRONT GigabitEthernet1/0/9 (301).
+*Dec 15 17:40:22.661: %INSTALL-5-INSTALL_START_INFO: Switch 1 R0/0: install_mgr: Started install activate NONE
+*Dec 15 17:40:43.231: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/1 (1), with JCOHOE-C9300LM-FRONT GigabitEthernet1/0/9 (301).
+*Dec 15 17:41:36.546: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/1 (1), with JCOHOE-C9300LM-FRONT GigabitEthernet1/0/9 (301).
+PnP HTTP timed out (5/10) on connection to PnP server (http://devicehelper.cisco.com.:80/pnp/HELLO)
+
+*Dec 15 17:41:40.252: %PNP-3-PNP_HTTP_TIMED_OUT: PnP HTTP timed out (5/10) on connection to PnP server (http://devicehelper.cisco.com.:80/pnp/HELLO)
+*Dec 15 17:41:40.310: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Dec 15 17:41:43.409: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Dec 15 17:41:43.410: %PNP-6-PNP_SAVING_TECH_SUMMARY: Saving PnP tech summary (/pnp-tech/pnp-tech-discovery-summary)... Please wait. Do not interrupt.
+*Dec 15 17:41:43.607: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Dec 15 17:41:43.950: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Dec 15 17:41:44.245: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Dec 15 17:41:44.374: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Dec 15 17:41:44.637: %PNP-6-PNP_SUDI_UPDATE: Device SUDI [PID:C9200CX-8P-2X2G,SN:FJC27271B8C] identified
+*Dec 15 17:41:45.406: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+*Dec 15 17:41:45.511: %PNP-6-PNP_TECH_SUMMARY_SAVED_OK: PnP tech summary (/pnp-tech/pnp-tech-discovery-summary) saved successfully (elapsed time: 2 seconds).
+*Dec 15 17:41:45.512: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Discovery Aborted)
+*Dec 15 17:42:29.635: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/1 (1), with JCOHOE-C9300LM-FRONT GigabitEthernet1/0/9 (301).
+*Dec 15 17:43:25.030: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/1 (1), with JCOHOE-C9300LM-FRONT GigabitEthernet1/0/9 (301).
+*Dec 15 17:43:40.509: %INSTALL-5-INSTALL_AUTO_ABORT_TIMER_PROGRESS: Switch 1 R0/0: install_mgr: Install auto abort timer will expire in 7200 seconds
+*Dec 15 17:44:13.081: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0/1 (1), with JCOHOE-C9300LM-FRONT GigabitEthernet1/0/9 (301).
+*Dec 15 17:44:49.403: %INSTALL-5-INSTALL_COMPLETED_INFO: Switch 1 R0/0: install_mgr: Completed install add_activate_commit
+Chassis 1 reloading, reason - Reload command
+Dec 15 17:44:52.687: %PMAN-5-EXITACTION: F0/0: pvp: Process manager is exiting: reload fp action requested
+Dec 15 17:44:52.700: %PMAN-5-EXITACTION: C0/0: pvp: Process manager is exiting: reload cc action requested
+Dec 15 17:44:55.329: %PMAN-5-EXITACTION: R0/0: pvp: Process manager is exiting: rp processes exit with reload switch code
+
+
+
+Initializing Hardware...
+SD init failed.
+
+System Bootstrap, Version 17.18.1r [FC2], RELEASE SOFTWARE (P)
+Compiled Wed 05/07/2025 15:42:44 by rel
+
+Current ROMMON image : Primary
+C9200CX-8P-2X2G platform with 4194304 Kbytes of main memory
+
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+
+##############
+
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.15.4, RELEASE SOFTWARE (fc6)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Tue 05-Aug-25 00:14 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+Please read the following carefully before proceeding. By downloading,
+installing, and/or using any Cisco software product, application, feature,
+license, or license key (collectively, the "Software"), you accept and
+agree to the following terms. If you do not agree, do not proceed and do not
+use this Software.
+
+This Software and its use are governed by Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+If you have a negotiated agreement with Cisco that includes this Software, the
+terms of that agreement apply as well. In the event of a conflict, the order
+of precedence stated in your negotiated agreement controls.
+
+Cisco Software is licensed on a term and/or subscription-basis. The license to
+the Software is valid only for the duration of the specified term, or in the
+case of a subscription-based license, only so long as all required subscription
+payments are current and fully paid-up. While Cisco may provide you
+licensing-related alerts, it is your sole responsibility to monitor your usage.
+Using Cisco Software without a valid license is not permitted and may result in
+fees charged to your account. Cisco reserves the right to terminate access to,
+or restrict the functionality of, any Cisco Software, or any features thereof,
+that are being used without a valid license.
+
+
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9200CX-8P-2X2G (ARM64) processor with 628732K/3071K bytes of memory.
+Processor board ID FJC27271B8C
+2048K bytes of non-volatile configuration memory.
+4011284K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+4928512K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 48:1b:a4:47:b6:00
+Motherboard Assembly Number        : 73-20601-04
+Motherboard Serial Number          : FJZ272610KM
+Model Revision Number              : D0
+Motherboard Revision Number        : B0
+Model Number                       : C9200CX-8P-2X2G
+System Serial Number               : FJC27271B8C
+CLEI Code Number                   : INMKK00BRA
+
+
+
+Press RETURN to get started!
+
+
+jcohoe-setby-nfx-ztp>
