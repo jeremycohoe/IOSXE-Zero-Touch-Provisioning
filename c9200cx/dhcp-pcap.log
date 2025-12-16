@@ -1,0 +1,986 @@
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+
+
+
+
+
+
+
+
+
+
+21:26:57.601868 ens160 B   IP (tos 0x0, ttl 255, id 3, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db0, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:01.013858 ens160 B   IP (tos 0x0, ttl 255, id 4, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db0, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:05.037766 ens160 B   IP (tos 0x0, ttl 255, id 5, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db0, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:12.602719 ens160 B   IP (tos 0x0, ttl 255, id 6, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db1, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:16.062142 ens160 B   IP (tos 0x0, ttl 255, id 7, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db1, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:20.062204 ens160 B   IP (tos 0x0, ttl 255, id 8, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db1, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:27.602214 ens160 B   IP (tos 0x0, ttl 255, id 9, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db2, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:31.061043 ens160 B   IP (tos 0x0, ttl 255, id 10, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db2, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:35.062726 ens160 B   IP (tos 0x0, ttl 255, id 12, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db2, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:42.601973 ens160 B   IP (tos 0x0, ttl 255, id 14, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:46.061951 ens160 B   IP (tos 0x0, ttl 255, id 16, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db3, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:50.061628 ens160 B   IP (tos 0x0, ttl 255, id 18, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db3, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:27:57.601801 ens160 B   IP (tos 0x0, ttl 255, id 19, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db4, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:01.061162 ens160 B   IP (tos 0x0, ttl 255, id 21, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db4, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:05.061969 ens160 B   IP (tos 0x0, ttl 255, id 23, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db4, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:12.829234 ens160 B   IP (tos 0x0, ttl 255, id 25, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db5, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:14.139268 ens160 B   IP (tos 0x0, ttl 255, id 608, offset 0, flags [none], proto UDP (17), length 366)
+    10.85.134.232.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 338, xid 0xf8bca4f4, Flags [none] (0x0000)
+          Client-IP 10.85.134.232
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Request
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Lease-Time (51), length 4: 600
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:14.153667 ens160 B   IP (tos 0x0, ttl 255, id 0, offset 0, flags [none], proto UDP (17), length 328)
+    192.168.1.1.bootps > 255.255.255.255.bootpc: [udp sum ok] BOOTP/DHCP, Reply, length 300, xid 0xf8bca4f4, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: NACK
+            Server-ID (54), length 4: 192.168.1.1
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            END (255), length 0
+            PAD (0), length 0, occurs 36
+21:28:14.158656 ens160 B   IP (tos 0x0, ttl 255, id 609, offset 0, flags [none], proto UDP (17), length 360)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 332, xid 0xf8bca4f4, secs 32409, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:16.062457 ens160 B   IP (tos 0x0, ttl 255, id 28, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db5, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:19.162195 ens160 B   IP (tos 0x0, ttl 255, id 610, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71b, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:20.060648 ens160 B   IP (tos 0x0, ttl 255, id 29, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db5, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:23.141705 ens160 B   IP (tos 0x0, ttl 255, id 611, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71b, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:27.142058 ens160 B   IP (tos 0x0, ttl 255, id 612, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71b, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:27.828676 ens160 B   IP (tos 0x0, ttl 255, id 30, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db6, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:31.062162 ens160 B   IP (tos 0x0, ttl 255, id 31, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db6, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:35.061413 ens160 B   IP (tos 0x0, ttl 255, id 32, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db6, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:42.829534 ens160 B   IP (tos 0x0, ttl 255, id 33, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:44.181574 ens160 B   IP (tos 0x0, ttl 255, id 613, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71c, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:46.061999 ens160 B   IP (tos 0x0, ttl 255, id 34, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db7, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:48.143518 ens160 B   IP (tos 0x0, ttl 255, id 614, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71c, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:50.060641 ens160 B   IP (tos 0x0, ttl 255, id 35, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db7, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:28:52.143964 ens160 B   IP (tos 0x0, ttl 255, id 615, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71c, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:28:57.829822 ens160 B   IP (tos 0x0, ttl 255, id 36, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db8, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:01.060369 ens160 B   IP (tos 0x0, ttl 255, id 37, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db8, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:05.060597 ens160 B   IP (tos 0x0, ttl 255, id 38, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063db8, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:12.829865 ens160 B   IP (tos 0x0, ttl 255, id 39, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db9, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:14.193957 ens160 B   IP (tos 0x0, ttl 255, id 616, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71d, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:29:16.060601 ens160 B   IP (tos 0x0, ttl 255, id 40, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db9, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:18.147754 ens160 B   IP (tos 0x0, ttl 255, id 617, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71d, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:29:20.060207 ens160 B   IP (tos 0x0, ttl 255, id 41, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063db9, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:22.148465 ens160 B   IP (tos 0x0, ttl 255, id 618, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71d, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:29:27.828210 ens160 B   IP (tos 0x0, ttl 255, id 42, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063dba, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:31.128926 ens160 B   IP (tos 0x0, ttl 255, id 43, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063dba, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:35.128621 ens160 B   IP (tos 0x0, ttl 255, id 44, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063dba, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:42.829388 ens160 B   IP (tos 0x0, ttl 255, id 45, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063dbb, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:46.128589 ens160 B   IP (tos 0x0, ttl 255, id 46, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063dbb, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:49.212242 ens160 B   IP (tos 0x0, ttl 255, id 619, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71e, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:29:50.129704 ens160 B   IP (tos 0x0, ttl 255, id 47, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063dbb, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:29:53.154769 ens160 B   IP (tos 0x0, ttl 255, id 620, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71e, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:29:57.156685 ens160 B   IP (tos 0x0, ttl 255, id 621, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71e, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
+21:29:57.828288 ens160 B   IP (tos 0x0, ttl 255, id 48, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063dbc, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:30:01.128490 ens160 B   IP (tos 0x0, ttl 255, id 49, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063dbc, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:30:05.128308 ens160 B   IP (tos 0x0, ttl 255, id 50, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063dbc, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:30:12.827979 ens160 B   IP (tos 0x0, ttl 255, id 51, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063dbd, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:30:16.128507 ens160 B   IP (tos 0x0, ttl 255, id 52, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063dbd, secs 3, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:30:20.127708 ens160 B   IP (tos 0x0, ttl 255, id 53, offset 0, flags [none], proto UDP (17), length 359)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 331, xid 0xea063dbd, secs 7, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 25: "cisco-481b.a447.b647-Vl1"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:30:27.829644 ens160 B   IP (tos 0x0, ttl 255, id 54, offset 0, flags [none], proto UDP (17), length 346)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 48:1b:a4:47:b6:47 (oui Unknown), length 318, xid 0xea063dbe, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 48:1b:a4:47:b6:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FJC27271B8C"
+            Hostname (12), length 6: "Switch"
+            Parameter-Request (55), length 13:
+              Subnet-Mask (1), TFTP (66), Domain-Name-Server (6), Domain-Name (15)
+              Netbios-Name-Server (44), Default-Gateway (3), BF (67), Hostname (12)
+              Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43), Unknown (125)
+              Unknown (143)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.50.48.48.67.88.45.56.80.45.50.88.50.71
+            END (255), length 0
+21:30:29.238742 ens160 B   IP (tos 0x0, ttl 255, id 622, offset 0, flags [none], proto UDP (17), length 355)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from f4:ee:31:84:bd:47 (oui Unknown), length 327, xid 0x8a6b71f, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address f4:ee:31:84:bd:47 (oui Unknown)
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message (53), length 1: Discover
+            MSZ (57), length 2: 1200
+            Client-ID (61), length 12: "FOC2704Y6TY"
+            Hostname (12), length 20: "jcohoe-setby-nfx-ztp"
+            Parameter-Request (55), length 8:
+              Subnet-Mask (1), Domain-Name-Server (6), Domain-Name (15), Netbios-Name-Server (44)
+              Default-Gateway (3), Static-Route (33), TFTP-Server-Address (150), Vendor-Option (43)
+            Vendor-Class (60), length 8: "ciscopnp"
+            Unknown (124), length 21: 0.0.0.9.16.15.67.57.51.48.48.76.45.50.52.85.88.71.45.52.88
+            END (255), length 0
