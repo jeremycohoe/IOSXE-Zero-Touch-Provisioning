@@ -1,0 +1,344 @@
+######################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+
+
+*Feb 03 19:04:19.046: %IOSXEBOOT-4-SMART_LOG: (local/local): Tue Feb 3 19:04:19 Universal 2026 INFO: Starting SMART daemon
+MM [0] MCU version 68 sw ver 68
+
+Both links down, not waiting for other switches
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.15.4b, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 10-Sep-25 10:02 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+Please read the following carefully before proceeding. By downloading,
+installing, and/or using any Cisco software product, application, feature,
+license, or license key (collectively, the "Software"), you accept and
+agree to the following terms. If you do not agree, do not proceed and do not
+use this Software.
+
+This Software and its use are governed by Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+If you have a negotiated agreement with Cisco that includes this Software, the
+terms of that agreement apply as well. In the event of a conflict, the order
+of precedence stated in your negotiated agreement controls.
+
+Cisco Software is licensed on a term and/or subscription-basis. The license to
+the Software is valid only for the duration of the specified term, or in the
+case of a subscription-based license, only so long as all required subscription
+payments are current and fully paid-up. While Cisco may provide you
+licensing-related alerts, it is your sole responsibility to monitor your usage.
+Using Cisco Software without a valid license is not permitted and may result in
+fees charged to your account. Cisco reserves the right to terminate access to,
+or restrict the functionality of, any Cisco Software, or any features thereof,
+that are being used without a valid license.
+
+
+% Checking backup nvram
+% No config present. Using default config
+
+Database already initialized
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9300L-24UXG-4X (X86) processor with 1049242K/6147K bytes of memory.
+Processor board ID FOC2704Y6TY
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+234430023K bytes of USB Flash at usbflash1:.
+0K bytes of Cloud S3 Storage at cloudfs:.
+
+Base Ethernet MAC Address          : f4:ee:31:84:bd:00
+Motherboard Assembly Number        : 73-19171-07
+Motherboard Serial Number          : FOC27030GPM
+Model Revision Number              : D0
+Motherboard Revision Number        : B0
+Model Number                       : C9300L-24UXG-4X
+System Serial Number               : FOC2704Y6TY
+CLEI Code Number                   : INMEE10BRA
+
+
+No startup-config, starting autoinstall/pnp/ztp...
+
+Autoinstall will terminate if any input is detected on console
+Feb  3 19:05:44.686: %IOX-3-IOX_RESTARTABITLITY: R0/0: run_ioxn_caf: Stack is in N+1 mode, disabling sync for IOx restartability
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]:
+*Feb  3 19:03:55.708: %IOSXE-0-PLATFORM: Switch 1 R0/0: udev: usb1: has been inserted
+Autoinstall trying DHCPv4 on Vlan1
+
+Autoinstall trying DHCPv6 on Vlan1
+
+Acquired IPv4 address 10.85.134.220 on Interface Vlan1
+Received following DHCPv4 options:
+        domain-name     : jcohoe-vnc2.cisco.com
+        bootfile        : http://10.85.134.200/ztp-serialnumber.py
+        dns-server-ip   : 64.102.6.247
+        si-addr         : 10.85.134.200
+
+OK to enter CLI now...
+
+pnp-discovery can be monitored without entering enable mode
+
+Entering enable mode will stop pnp-discovery
+
+Attempting bootfile http://10.85.134.200/ztp-serialnumber.py
+
+Loading http://10.85.134.200/ztp-serialnumber.py
+Loading http://10.85.134.200/ztp-serialnumber.py
+CCO server (devicehelper.cisco.com.) resolved to ip (18.205.127.81) by (pid=577, pname=PnP Agent Discovery, time=19:06:47 UTC Tue Feb 3 2026)
+
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+day0guestshell activated successfully
+Current state is: ACTIVATED
+day0guestshell started successfully
+Current state is: RUNNING
+Guestshell enabled successfully
+
+
+   *** Cisco C9300-L ZTP Script
+
+
+
+
+   *** Stop prompts
+
+
+Line 1 SUCCESS:  file prompt quiet
+Line 2 SUCCESS:  end
+
+
+
+   *** Copy image to flash: ***
+
+
+
+
+   *** Copy config file to running-config: ***
+
+
+Accessing http://10.85.134.200/jcohoe-c9300l.cfg...
+Loading http://10.85.134.200/jcohoe-c9300l.cfg
+379 bytes copied in 0.294 secs (1289 bytes/sec)
+
+
+
+   *** Generate SSH key ***
+
+
+The name for the keys will be: JCOHOE-C9300L-ZTP.jcohoe-vnc2.cisco.com
+% The key modulus size is 4096 bits
+% Generating crypto RSA keys in background ...
+
+
+
+   *** Enable prompts
+
+
+Line 1 SUCCESS:  no file prompt quiet
+Line 2 SUCCESS:  end
+
+
+
+   *** Copy running-config to startup: ***
+
+
+Building configuration...
+[OK]
+
+Line 1 SUCCESS:  event manager applet upgrade authorization bypass
+Line 2 SUCCESS:  event none sync yes maxrun 3600 ;
+Line 3 SUCCESS:  action 1.0 syslog facility "EEM" msg "Initiating ZTP for the device"
+Line 4 SUCCESS:  action 1.1 cli command "enable"
+Line 5 SUCCESS:  action 1.2 cli command "configure term"
+Line 6 SUCCESS:  action 1.3 cli command "no file prompt quiet"
+Line 7 SUCCESS:  action 1.4 cli command "exit"
+Line 8 SUCCESS:  action 1.5 cli command "terminal length 0"
+Line 9 SUCCESS:  action 1.6 cli command "write memory"
+Line 10 SUCCESS:  action 1.7 cli command "install add file flash:cat9k_iosxe.17.18.01.SPA.bin activate commit prompt-level none"
+
+
+ Upgrades happens as a background task. The switch will reboot in 5-10 minutes
+
+
+
+PnP HTTP timed out (1/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+Guestshell destroyed successfully
+Script execution success!
+
+
+
+Press RETURN to get started!
+
+
+Feb  3 19:09:16.214: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+Feb  3 19:09:16.693: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+Feb  3 19:09:16.698: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+Feb  3 19:09:16.713: %SYS-5-CONFIG_P: Configured programmatically by process DHCP Autoinstall from console as console
+Feb  3 19:09:16.713: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell de-initilization API is being invoked
+
+Feb  3 19:09:16.713: %PNP-6-PNP_PYTHON_SCRIPT_DONE: Python script (http://10.85.134.200/ztp-serialnumber.py) done (1/3) via (script-file-exec) by (pid=605, pname=DHCP Autoinstall, time=11:09:16 pacific Tue Feb 3 2026)
+Feb  3 19:09:16.713: AUTOINSTALL: script execution successful for Vl1.
+Feb  3 19:09:16.713: %SYS-5-USERLOG_NOTICE: Message from tty0(user id: ): Device in day0 workflow, some non user-configured options may be enabled by default
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+Feb  3 19:09:24.272: %PNP-6-HTTP_CONNECTING: PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+PnP HTTP timed out (2/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+Feb  3 19:09:44.290: %PNP-3-PNP_HTTP_TIMED_OUT: PnP HTTP timed out (2/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+Feb  3 19:09:59.290: %PNP-6-HTTP_CONNECTING: PnP Discovery trying to connect to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+Feb  3 19:10:09.672: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on TenGigabitEthernet1/0/24 (1), with JCOHOE-C9300-2.test.local TenGigabitEthernet1/0/12 (301).
+Feb  3 19:10:09.192: %INSTALL-5-INSTALL_START_INFO: Switch 1 R0/0: install_mgr: Started install activate NONE
+PnP HTTP timed out (3/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+Feb  3 19:10:19.307: %PNP-3-PNP_HTTP_TIMED_OUT: PnP HTTP timed out (3/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+PnP HTTP timed out (4/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+
+Feb  3 19:10:54.327: %PNP-3-PNP_HTTP_TIMED_OUT: PnP HTTP timed out (4/10) on connection to PnP server (https://devicehelper.cisco.com.:443/pnp/HELLO)
+Feb  3 19:10:58.488: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on TenGigabitEthernet1/0/24 (1), with JCOHOE-C9300-2.test.local TenGigabitEthernet1/0/12 (301).
+PnP HTTP timed out (5/10) on connection to PnP server (http://devicehelper.cisco.com.:80/pnp/HELLO)
+
+Feb  3 19:11:29.346: %PNP-3-PNP_HTTP_TIMED_OUT: PnP HTTP timed out (5/10) on connection to PnP server (http://devicehelper.cisco.com.:80/pnp/HELLO)
+Feb  3 19:11:29.378: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+Feb  3 19:11:32.407: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+Feb  3 19:11:32.408: %PNP-6-PNP_SAVING_TECH_SUMMARY: Saving PnP tech summary (/pnp-tech/pnp-tech-discovery-summary)... Please wait. Do not interrupt.
+Feb  3 19:11:32.565: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+Feb  3 19:11:32.740: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+Feb  3 19:11:32.778: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+Feb  3 19:11:32.885: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+Feb  3 19:11:33.007: %PNP-6-PNP_SUDI_UPDATE: Device SUDI [PID:C9300L-24UXG-4X,SN:FOC2704Y6TY] identified
+Feb  3 19:11:33.597: %SYS-5-CONFIG_P: Configured programmatically by process PnP Agent Discovery from console as vty1
+Feb  3 19:11:33.697: %PNP-6-PNP_TECH_SUMMARY_SAVED_OK: PnP tech summary (/pnp-tech/pnp-tech-discovery-summary) saved successfully (elapsed time: 1 seconds).
+Feb  3 19:11:33.697: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Discovery Aborted)
+Feb  3 19:11:49.712: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on TenGigabitEthernet1/0/24 (1), with JCOHOE-C9300-2.test.local TenGigabitEthernet1/0/12 (301).
+Feb  3 19:12:38.397: %INSTALL-5-INSTALL_AUTO_ABORT_TIMER_PROGRESS: Switch 1 R0/0: install_mgr: Install auto abort timer will expire in 7200 seconds
+Feb  3 19:12:42.263: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on TenGigabitEthernet1/0/24 (1), with JCOHOE-C9300-2.test.local TenGigabitEthernet1/0/12 (301).
+Chassis 1 reloading, reason - Reload command
+Feb  3 11:13:34.286: %PMAN-5-EXITACTION: F0/0: pvp: Process manager is exiting: reload fp action requested
+Feb  3 11:13:37.335: %PMAN-5-EXITACTION: R0/0: pvp: Process manager is exiting: rp processes exit with reload switch code
+
+
+
+Initializing Hardware...
+
+System Bootstrap, Version 17.15.4r, RELEASE SOFTWARE (P)
+Compiled Tue 06/10/2025 13:08:26.16 by rel
+
+Current ROMMON image : Primary
+Last reset cause     : SoftwareReload
+C9300L-24UXG-4X platform with 8388608 Kbytes of main memory
+
+boot: attempting to boot from [flash:packages.conf]
+boot: reading file packages.conf
+#
+################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+
+
+*Feb 03 19:14:59.401: %IOSXEBOOT-4-SMART_LOG: (local/local): Tue Feb 3 19:14:59 Universal 2026 INFO: Starting SMART daemon
+
+Both links down, not waiting for other switches
+Switch number is 1
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.18.1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 06-Aug-25 03:45 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+Please read the following carefully before proceeding. By downloading,
+installing, and/or using any Cisco software product, application, feature,
+license, or license key (collectively, the "Software"), you accept and
+agree to the following terms. If you do not agree, do not proceed and do not
+use this Software.
+
+This Software and its use are governed by Cisco's General Terms and any
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+If you have a negotiated agreement with Cisco that includes this Software, the
+terms of that agreement apply as well. In the event of a conflict, the order
+of precedence stated in your negotiated agreement controls.
+
+Cisco Software is licensed on a term and/or subscription-basis. The license to
+the Software is valid only for the duration of the specified term, or in the
+case of a subscription-based license, only so long as all required subscription
+payments are current and fully paid-up. While Cisco may provide you
+licensing-related alerts, it is your sole responsibility to monitor your usage.
+Using Cisco Software without a valid license is not permitted and may result in
+fees charged to your account. Cisco reserves the right to terminate access to,
+or restrict the functionality of, any Cisco Software, or any features thereof,
+that are being used without a valid license.
+
+
+
+FIPS: Flash Key Check : Key Not Found, FIPS Mode Not Enabled
+cisco C9300L-24UXG-4X (X86) processor with 1050581K/6147K bytes of memory.
+Processor board ID FOC2704Y6TY
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+234430023K bytes of USB Flash at usbflash1:.
+
+Base Ethernet MAC Address          : f4:ee:31:84:bd:00
+Motherboard Assembly Number        : 73-19171-07
+Motherboard Serial Number          : FOC27030GPM
+Model Revision Number              : D0
+Motherboard Revision Number        : B0
+Model Number                       : C9300L-24UXG-4X
+System Serial Number               : FOC2704Y6TY
+CLEI Code Number                   : INMEE10BRA
+
+
+ WARNING: Command has been added to the configuration using a type 0 password. However, recommended to migrate to strong type-6 encryption
+
+
+Press RETURN to get started!
+
+
+*Feb  3 19:14:36.536: %IOSXE-0-PLATFORM: Switch 1 R0/0: udev: usb1: has been inserted
