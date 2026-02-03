@@ -13,8 +13,8 @@ print("\n\n   *** Stop prompts  \n\n")
 cli.configurep(["file prompt quiet", "end"])
 
 print("\n\n   *** Copy image to flash: ***   \n\n")
-#cli_command = "copy http://%s/%s flash:%s" % (http_server, img_cat9k, img_cat9k)
-#cli.executep(cli_command)
+cli_command = "copy http://%s/%s flash:%s" % (http_server, img_cat9k, img_cat9k)
+cli.executep(cli_command)
 
 print("\n\n   *** Copy config file to running-config: ***   \n\n")
 cli_command = "copy http://%s/%s running-config" % (http_server, config_file)
